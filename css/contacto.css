@@ -154,4 +154,18 @@
     color: #BFA181
   }
   
+  @media screen and (max-width: 800px) {
+    #Contacto form {
+      height: auto;
+      width: 500px;
+      flex-direction: column;
+    }
+  }
   
+  @media screen and (max-width: 320px) {
+    #Contacto form {
+      height: auto;
+      width: 320px;
+      flex-direction: column;
+  }
+  }

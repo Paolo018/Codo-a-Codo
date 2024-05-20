@@ -126,13 +126,11 @@
   #Destacados .contenedor_ofertas article {
     width: 20%;
     height: 400px;
-    background-color: rgb(248, 248, 212);
     margin: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #BFA181;
   }
   
   .contenedor_ofertas article h4 {
@@ -149,13 +147,14 @@
   .contenedor_ofertas article p {
     padding-top: 10px;
     padding-bottom: 10px;
+    cursor: pointer;
   }
   
   footer {
     background-color: black;
     text-align: center;
     padding: 2%;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -163,4 +162,20 @@
   
   footer p {
     color: #BFA181
+  }
+
+  @media screen and (max-width: 800px) {
+    #Destacados .contenedor_ofertas {
+      height: auto;
+      width: 500px;
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    #Destacados .contenedor_ofertas {
+      height: auto;
+      width: 320px;
+      flex-direction: column;
+  }
   }

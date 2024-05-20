@@ -128,4 +128,19 @@
     color: #BFA181
   }
   
+  @media screen and (max-width: 800px) {
+    #Nosotros p {
+      height: auto;
+      width: 500px;
+      flex-direction: column;
+    }
+
+  }
   
+  @media screen and (max-width: 320px) {
+    #Nosotros p {
+      height: auto;
+      width: 320px;
+      flex-direction: column;
+  }
+  }
