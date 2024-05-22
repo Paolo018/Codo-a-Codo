@@ -7,17 +7,16 @@ function scrollToTop() {
 
 
  //Es para el modal del login
-        var loginButton = document.getElementById("loginButton");
-        var loginModal = document.getElementById("loginModal");{
-        loginButton.addEventListener("click", function() {
-            loginModal.style.display = "block";
-        });
-        document.getElementById("closeButton").addEventListener("click", function() {
-            loginModal.style.display = "none";
-        });
-        window.addEventListener("click", function(event) {
-            if (event.target == loginModal) {
-                loginModal.style.display = "none";
-            }
-        });
-}
+var loginButton = document.getElementById("loginButton");
+var loginModal = document.getElementById("loginModal");
+loginButton.addEventListener("click", function() {
+    loginModal.style.display = "block";
+});
+document.getElementById("closeButton").addEventListener("click", function() {
+    loginModal.style.display = "none";
+});
+window.addEventListener("click", function(event) {
+    if (event.target == loginModal) {
+        loginModal.style.display = "none";
+    }
+});
