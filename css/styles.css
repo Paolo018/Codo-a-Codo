@@ -49,8 +49,16 @@ header h1 {
 }
 
 #btnInicio {
-  color: black; 
-  background-color: #BFA290;
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    background-color: #BFA290;
+    color: #d8e278; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999; 
 }
 
 .button:hover {
