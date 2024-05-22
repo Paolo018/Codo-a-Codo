@@ -149,7 +149,20 @@
     padding-bottom: 10px;
     cursor: pointer;
   }
-  
+
+  #btnInicio {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    background-color: #BFA290;
+    color: #d8e278; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999; 
+}
+
   footer {
     background-color: black;
     text-align: center;
