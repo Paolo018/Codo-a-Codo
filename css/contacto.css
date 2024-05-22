@@ -140,6 +140,11 @@
     background-color: #BFA181;
   }
 
+ #MapsD {
+   margin-top: 2em;
+   margin-bottom: 2em;
+  }
+
   #Maps iframe {
    display: block;
    margin: 0 auto;
@@ -147,9 +152,8 @@
    overflow: hidden;
    border-radius: 5px;
    border: 2px solid #BFA181;
-   margin-top: 2em;
-   margin-bottom: 2em;
   }
+  
   
   footer {
     background-color: black;
