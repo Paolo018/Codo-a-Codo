@@ -139,6 +139,10 @@
     color: black; 
     background-color: #BFA181;
   }
+
+  .error {
+    border: 1px solid red;
+  }
   
   footer {
     background-color: black;

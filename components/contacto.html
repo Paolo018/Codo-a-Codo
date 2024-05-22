@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="/script.js"></script>
 </head>
 <body>
     <header>
@@ -36,28 +37,28 @@
         </nav>
     <section id="Contacto">
         <h2 class="titulo">Contacto</h2>
-        <form action="">
+        <form id="formulario" onsubmit="return validarFormulario()">
 
             <label for="Asunto">Asunto</label>
-            <select class="form-select" aria-label="Default select example">
-                <option selected></option>
+            <select class="form-select" aria-label="Default select example" id="Asunto" name="Asunto">
+                <option value="" selected>Selecciona un asunto</option>
                 <option value="1">Consultas generales</option>
                 <option value="2">Compra online</option>
                 <option value="3">Libro de quejas</option>
-              </select>
+            </select>
             
             <label for="Name">Nombre</label>
-            <input id="Name" name="Name" type="text">
-
+            <input id="Name" name="Name" type="text" required>
+        
             <label for="Apellido">Apellido</label>
-            <input id="Apellido" name="Apellido" type="text">
-
-            <label for="Subject">Email</label>
-            <input id="Subject" name="Subject" type="text">
-
+            <input id="Apellido" name="Apellido" type="text" required>
+        
+            <label for="Email">Email</label>
+            <input id="Email" name="Email" type="email" required>
+        
             <label for="Message">Consulta</label>
-            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
-
+            <textarea name="Message" id="Message" cols="30" rows="10" required></textarea>
+        
             <input class="button" type="reset">
             <input class="button" type="submit">
         </form>
