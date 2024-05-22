@@ -7,7 +7,7 @@ function scrollToTop() {
 
 
  //Es para el modal del login
-var loginButton = document.getElementById("loginButton");
+var loginButton = document.getElementById("Login"); 
 var loginModal = document.getElementById("loginModal");
 loginButton.addEventListener("click", function() {
     loginModal.style.display = "block";
