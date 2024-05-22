@@ -75,6 +75,16 @@
     color: white;
 }
 
+.login-form .button-cancelar {
+    background-color: #eca04e;
+    color: #BFA181;
+}
+
+.login-form .button-cancelar:hover {
+    background-color: #d36551;
+    color: white;
+}
+
 .login-form a.button {
     display: inline-block;
     text-decoration: none;
