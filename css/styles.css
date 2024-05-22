@@ -48,6 +48,11 @@ header h1 {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+#btnInicio {
+  color: black; 
+  background-color: #BFA290;
+}
+
 .button:hover {
   color: black; 
   background-color: #BFA181;
