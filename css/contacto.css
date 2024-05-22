@@ -152,7 +152,7 @@
    margin: 0 auto;
    height: 100%;
    width: auto;
-   border-radius: 25px;
+   border-radius: 50%;
    overflow: hidden;
    border: 5px solid #BFA181;
   }
