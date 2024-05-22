@@ -139,6 +139,13 @@
     color: black; 
     background-color: #BFA181;
   }
+
+  #Maps iframe {
+   display: block;
+   margin: 0 auto;
+   border-radius: 10px;
+   overflow: hidden;
+  }
   
   footer {
     background-color: black;
