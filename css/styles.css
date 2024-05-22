@@ -48,19 +48,6 @@ header h1 {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-#btnInicio {
-    position: fixed; 
-    bottom: 20px;
-    right: 20px;
-    background-color: #BFA290;
-    color: #d8e278; 
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    z-index: 999; 
-}
-
 .button:hover {
   color: black; 
   background-color: #BFA181;
@@ -162,6 +149,20 @@ main {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+#btnInicio {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    background-color: #BFA290;
+    color: #d8e278; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999; 
+}
+
 
 footer {
   background-color: black;
