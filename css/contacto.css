@@ -181,7 +181,7 @@
   @media screen and (max-width: 320px) {
     #Contacto form {
       height: auto;
-      width: 320px;
+      width: 310px;
       flex-direction: column;
   }
   }
