@@ -141,20 +141,17 @@
   }
 
 #Maps {
-  border: 2px solid #BFA181;
   border-radius: 5px;
   margin-top: 2em;
   margin-bottom: 2em;
-  padding: 2em;
 }
 
   #Maps iframe {
    display: block;
    margin: 0 auto;
    width: auto;
-   border-radius: 5px;
+   border-radius: 25px;
    overflow: hidden;
-   border-radius: 5px;
    border: 2px solid #BFA181;
   }
   
