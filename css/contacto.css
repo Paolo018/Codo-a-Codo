@@ -143,8 +143,12 @@
   #Maps iframe {
    display: block;
    margin: 0 auto;
-   border-radius: 10px;
+   border-radius: 5px;
    overflow: hidden;
+   border-radius: 5px;
+   border: 2px solid #BFA181;
+   padding: 0.20em
+   margin: 0.10em
   }
   
   footer {
