@@ -36,6 +36,7 @@
   .contenedor_ofertas img {
     width: 100px;
     height: 100px;
+    max-width: 100%; 
   }
   
   .button {
