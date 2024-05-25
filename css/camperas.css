@@ -38,6 +38,7 @@ img {
   width: 100%;
   max-width: 100%; 
 }
+  
 
 #Destacados .contenedor_ofertas {
   display: flex;
@@ -227,5 +228,10 @@ img {
       height: auto;
       width: 100%;;
       flex-direction: column;
+  }
+      #Destacados .contenedor_ofertas {
+    height: auto;
+    width: 100%; 
+    flex-direction: column;
   }
   }
