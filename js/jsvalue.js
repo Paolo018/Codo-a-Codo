@@ -26,36 +26,6 @@ document.getElementById('product-form').addEventListener('submit', function(even
     }
 });
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    let asunto = document.getElementById('Asunto').value;
-    let name = document.getElementById('Name').value;
-    let apellido = document.getElementById('Apellido').value;
-    let email = document.getElementById('Subject').value;
-    let message = document.getElementById('Message').value;
-    
-    if (!asunto || !name || !apellido || !email || !message) {
-        alert('Por favor, complete todos los campos.');
-        event.preventDefault();
-        return;
-    }
-
-    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-        alert('Por favor, ingrese un correo electrónico válido.');
-        event.preventDefault();
-        return;
-    }
-});
-
-
-
-
-
-
-
-
-
-
 document.querySelectorAll('.product-checkbox').forEach(checkbox => {
     checkbox.addEventListener('change', function() {
         const talleSection = this.closest('article').querySelector('.SeleccionTalle');
