@@ -215,7 +215,7 @@ footer p {
   }
 
   footer {
-    position: fixed;
+    position: sticky;
   }
 }
 
@@ -244,8 +244,8 @@ footer p {
   text-align: center;
   font-size: 70%;
 }
-  footer {
-    position: fixed;
+    footer {
+    position: sticky;
   }
 }
 
