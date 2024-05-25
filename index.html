@@ -6,7 +6,8 @@
     <title>Divina boutique</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -38,29 +39,41 @@
             <h2 class="titulo">Productos</h2>
             <section>
                 <div class="contenedor_ofertas">
-                    <article>
-                        
-                        <img src="/src/img/camperas/tapado.webp" alt="">
-                        <h4>Tapado</h4>
-                        <p>$80.000</p>
-                    </article>
-                    <article>
-                        <img src="/src/img/camperas/cuero flama.webp" alt="">
-                        <h4>Campera de cuero</h4>
-                        <p>$120.000</p>
-                    </article>
-                    <article>
-                        
-                        <img src="/src/img/remeras/rojo con botones.webp" alt="">
-                        <h4>Remera con botones</h4>
-                        <p>$20.000</p>
-                    </article>
-                    <article>
-                        
-                        <img src="/src/img/pantalones/calza negra.webp" alt="">
-                        <h4>Calza oxford</h4>
-                        <p>$32.000</p>
-                    </article>
+                    <form id="product-form">
+                        <article>
+                            <input type="checkbox" name="product" value="Tapado">
+                            <img src="/src/img/camperas/tapado.webp" alt="Tapado">
+                            <h4>Tapado</h4>
+                            <p>$80.000</p>
+                        </article>
+                        <article>
+                            <input type="checkbox" name="product" value="Campera de cuero">
+                            <img src="/src/img/camperas/cuero flama.webp" alt="Campera de cuero">
+                            <h4>Campera de cuero</h4>
+                            <p>$120.000</p>
+                        </article>
+                        <article>
+                            <input type="checkbox" name="product" value="Remera con botones">
+                            <img src="/src/img/remeras/rojo con botones.webp" alt="Remera con botones">
+                            <h4>Remera con botones</h4>
+                            <p>$20.000</p>
+                        </article>
+                        <article>
+                            <input type="checkbox" name="product" value="Calza oxford">
+                            <img src="/src/img/pantalones/calza negra.webp" alt="Calza oxford">
+                            <h4>Calza oxford</h4>
+                            <p>$32.000</p>
+                        </article>
+                        <div>
+                            <label for="size">Seleccione Talle:</label><br>
+                            <input type="radio" name="size" value="XS"> XS
+                            <input type="radio" name="size" value="S"> S
+                            <input type="radio" name="size" value="M"> M
+                            <input type="radio" name="size" value="L"> L
+                            <input type="radio" name="size" value="XL"> XL
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar al carrito</button>
+                    </form>
                 </div>
             </section>
         </section>
@@ -69,5 +82,8 @@
         <p>Codo a Codo 2024 - Todos los derechos reservados</p>
     </footer>
 <script src="/js/jsvalue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
