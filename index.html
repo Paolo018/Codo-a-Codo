@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divina boutique</title>
+    <title>Divina Boutique</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,29 +11,27 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            
-        </div>
-        <h1>Divina boutique</h1>
+        <div class="logo"></div>
+        <h1>Divina Boutique</h1>
         <a id="Login" class="button" href="/components/login.html">Login</a>
     </header>
-        <nav>
-            <ul>
-                <li><a href="/index.html" class="button">Ofertas</a></li>
-                <li>
-                    <div class="menu">
-                        <a href="#" class="button">Categorías</a>
-                            <ul>
-                                <li><a href="/components/camperas.html">Camperas</a></li>
-                                <li><a href="/components/remeras.html">Remeras</a></li>
-                                <li><a href="/components/pantalones.html">Pantalones</a></li>
-                            </ul>
-                    </div>
-                </li>
-                <li><a href="/components/nosotros.html" class="button">Nosotros</a></li>
-                <li><a href="/components/contacto.html" class="button">Contacto</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="/index.html" class="button">Ofertas</a></li>
+            <li>
+                <div class="menu">
+                    <a href="#" class="button">Categorías</a>
+                    <ul>
+                        <li><a href="/components/camperas.html">Camperas</a></li>
+                        <li><a href="/components/remeras.html">Remeras</a></li>
+                        <li><a href="/components/pantalones.html">Pantalones</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="/components/nosotros.html" class="button">Nosotros</a></li>
+            <li><a href="/components/contacto.html" class="button">Contacto</a></li>
+        </ul>
+    </nav>
     <main>
         <section id="Destacados">
             <h2 class="titulo">Productos</h2>
@@ -44,14 +42,16 @@
                             <img src="/src/img/camperas/tapado.webp" alt="Tapado">
                             <h4>Tapado</h4>
                             <p>$80.000</p>
-                            <input type="checkbox" name="product" value="Tapado">
-                            <section id="SeleccionTalle">
-                            <label for="size">Seleccione Talle:</label><br>
-                            <input type="radio" name="size" value="XS"> XS
-                            <input type="radio" name="size" value="S"> S
-                            <input type="radio" name="size" value="M"> M
-                            <input type="radio" name="size" value="L"> L
-                            <input type="radio" name="size" value="XL"> XL
+                            <input type="checkbox" name="product" value="Tapado" class="product-checkbox">
+                            <section class="SeleccionTalle" style="display: none;">
+                                <label for="size">Seleccione Talle:</label><br>
+                                <input type="radio" name="size-Tapado" value="XS"> XS
+                                <input type="radio" name="size-Tapado" value="S"> S
+                                <input type="radio" name="size-Tapado" value="M"> M
+                                <input type="radio" name="size-Tapado" value="L"> L
+                                <input type="radio" name="size-Tapado" value="XL"> XL
+                                <label for="quantity">Cantidad:</label>
+                                <input type="number" name="quantity-Tapado" min="1" max="10">
                             </section>
                         </article>
                         <article>
@@ -60,12 +60,14 @@
                             <p>$120.000</p>
                             <input type="checkbox" name="product" value="Campera de cuero">
                             <section id="SeleccionTalle">
-                            <label for="size">Seleccione Talle:</label><br>
-                            <input type="radio" name="size" value="XS"> XS
-                            <input type="radio" name="size" value="S"> S
-                            <input type="radio" name="size" value="M"> M
-                            <input type="radio" name="size" value="L"> L
-                            <input type="radio" name="size" value="XL"> XL
+                                <label for="size">Seleccione Talle:</label><br>
+                                <input type="radio" name="size" value="XS"> XS
+                                <input type="radio" name="size" value="S"> S
+                                <input type="radio" name="size" value="M"> M
+                                <input type="radio" name="size" value="L"> L
+                                <input type="radio" name="size" value="XL"> XL
+                                 <label for="quantity">Cantidad:</label>
+                                <input type="number" name="quantity-Tapado" min="1" max="10">
                             </section>
                         </article>
                         <article>
@@ -74,12 +76,14 @@
                             <p>$20.000</p>
                             <input type="checkbox" name="product" value="Remera con botones">
                             <section id="SeleccionTalle">
-                            <label for="size">Seleccione Talle:</label><br>
-                            <input type="radio" name="size" value="XS"> XS
-                            <input type="radio" name="size" value="S"> S
-                            <input type="radio" name="size" value="M"> M
-                            <input type="radio" name="size" value="L"> L
-                            <input type="radio" name="size" value="XL"> XL
+                                <label for="size">Seleccione Talle:</label><br>
+                                <input type="radio" name="size" value="XS"> XS
+                                <input type="radio" name="size" value="S"> S
+                                <input type="radio" name="size" value="M"> M
+                                <input type="radio" name="size" value="L"> L
+                                <input type="radio" name="size" value="XL"> XL
+                                 <label for="quantity">Cantidad:</label>
+                                 <input type="number" name="quantity-Tapado" min="1" max="10">
                             </section>
                         </article>
                         <article>
@@ -88,14 +92,16 @@
                             <p>$32.000</p>
                             <input type="checkbox" name="product" value="Calza oxford">
                             <section id="SeleccionTalle">
-                            <label for="size">Seleccione Talle:</label><br>
-                            <input type="radio" name="size" value="XS"> XS
-                            <input type="radio" name="size" value="S"> S
-                            <input type="radio" name="size" value="M"> M
-                            <input type="radio" name="size" value="L"> L
-                            <input type="radio" name="size" value="XL"> XL
+                                <label for="size">Seleccione Talle:</label><br>
+                                <input type="radio" name="size" value="XS"> XS
+                                <input type="radio" name="size" value="S"> S
+                                <input type="radio" name="size" value="M"> M
+                                <input type="radio" name="size" value="L"> L
+                                <input type="radio" name="size" value="XL"> XL
+                                 <label for="quantity">Cantidad:</label>
+                                 <input type="number" name="quantity-Tapado" min="1" max="10">
                             </section>
-                        <button type="submit" class="btn btn-primary">REALIZAR PEDIDO</button>
+                        <button type="button" class="btn btn-primary" id="realizar-pedido-btn">REALIZAR PEDIDO</button>
                     </form>
                 </div>
             </section>
@@ -104,9 +110,10 @@
     <footer>
         <p>Codo a Codo 2024 - Todos los derechos reservados</p>
     </footer>
-<script src="/js/jsvalue.js"></script>
+    <script src="/js/jsvalue.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
+
