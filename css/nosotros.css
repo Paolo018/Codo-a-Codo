@@ -147,10 +147,10 @@
   transition: 0.5s;
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  width: 75px;
+  width: 60px;
   heigt: auto;
   text-align: center;
-  font-size: 80%;
+  font-size: 70%;
 }
 
   }
@@ -176,7 +176,7 @@
   transition: 0.5s;
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  width: 50px;
+  width: 60px;
   heigt: auto;
   text-align: center;
   font-size: 60%;
