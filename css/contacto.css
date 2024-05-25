@@ -136,6 +136,19 @@
     background-color: #BFA181;
   }
 
+.button {
+    background-color: rgb(248, 248, 212);
+    padding: 7px;
+    color: #BFA181;
+    border-radius: 8px;
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    width: auto;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
 #Maps {
   border-radius: 5px;
   margin-top: 2em;
@@ -186,10 +199,10 @@
   transition: 0.5s;
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  width: 60px;
+  width: 95%;
   heigt: auto;
   text-align: center;
-  font-size: 70%;
+  font-size: 75%;
 }
 
   }
@@ -215,10 +228,10 @@
   transition: 0.5s;
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  width: 60px;
+  width: 80%;
   heigt: auto;
   text-align: center;
-  font-size: 60%;
+  font-size: 70%;
   left: 0; 
 }
   }
