@@ -20,6 +20,8 @@
   
   body {
     background-color: ivory;
+    width: auto;
+    heigt: 100%;
   }
   
   header {
@@ -127,14 +129,27 @@
     color: #BFA181
   }
   
-  @media screen and (max-width: 800px) {
-    #Nosotros p {
-      height: auto;
-      width: 500px;
-      flex-direction: column;
-    }
-
+ @media screen and (max-width: 800px) {
+  #Destacados .contenedor_ofertas {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
   }
+       .button {
+  background-color: rgb(248, 248, 212);
+  padding: 7px;
+  color: #BFA181;
+  border-radius: 4px;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 50px;
+  heigt: auto;
+  text-align: center;
+  font-size: 95%;
+}
+
+}
   
   @media screen and (max-width: 320px) {
     #Nosotros p {
@@ -143,3 +158,30 @@
       flex-direction: column;
   }
   }
+
+
+
+@media screen and (max-width: 320px) {
+  header, nav ul {
+        flex-direction: row;
+        align-items: flex-start;
+  }
+  
+  .button {
+  background-color: rgb(248, 248, 212);
+  padding: 7px;
+  color: #BFA181;
+  border-radius: 4px;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 50px;
+  heigt: auto;
+  text-align: center;
+  font-size: 70%;
+}
+}
+
+
+
+
