@@ -15,7 +15,7 @@
   main,
   footer,
   nav {
-    padding: 25px;
+    padding: 5px;
   }
   
   body {
@@ -95,9 +95,7 @@
     display: block;
   }
   
-  main {
-    padding: 0;
-  }
+
 
   .titulo {
     background-color: rgb(248, 248, 212);
@@ -180,7 +178,6 @@
   text-align: center;
   font-size: 60%;
   left: 0; 
-  transform: translateY(-50%); 
 }
   }
 
