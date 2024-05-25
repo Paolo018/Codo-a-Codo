@@ -225,6 +225,8 @@ footer p {
   heigt: auto;
   text-align: center;
   font-size: 70%;
+  left: 0; 
+  transform: translateY(-50%); 
 }
 
   #Destacados .contenedor_ofertas {
