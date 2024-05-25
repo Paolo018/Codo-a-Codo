@@ -12,11 +12,21 @@
   }
   
   header,
-  main,
   footer,
   nav {
     padding: 5px;
   }
+
+  main,
+    {
+    padding: 5px;
+    flex: 1; 
+  }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
   
   body {
     background-color: ivory;
