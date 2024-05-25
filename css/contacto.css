@@ -133,12 +133,13 @@
   
   #Contacto form input[type="reset"]:hover, #Contacto form input[type="submit"]:hover {
     color: black; 
-    background-color: #BFA181;
+    background-color: #d68e41;
   }
 
 .button {
     text-align: center;
     align-items: center;
+    font-size: auto;
   }
 
 #Maps {
@@ -191,7 +192,7 @@
   transition: 0.5s;
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  width: 95%;
+  width: auto;
   heigt: auto;
   text-align: center;
   font-size: 75%;
@@ -220,8 +221,7 @@
   transition: 0.5s;
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  width: 80%;
-  heigt: auto;
+  width: auto;
   text-align: center;
   font-size: 70%;
   left: 0; 
