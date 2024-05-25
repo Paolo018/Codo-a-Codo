@@ -162,7 +162,7 @@
     
   header, nav ul {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
   }
   
   .button {
