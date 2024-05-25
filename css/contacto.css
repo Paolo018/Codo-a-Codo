@@ -168,7 +168,7 @@
   }
   
     @media screen and (max-width: 800px) {
-   section #Contacto {
+   #Contacto {
       margin: 0.1em;
       height: auto;
        width: 100%;
@@ -195,7 +195,7 @@
   }
   
   @media screen and (max-width: 320px) {
-    section #Contacto {
+    #Contacto {
       margin: 0.1em;
       height: auto;
        width: 100%;
