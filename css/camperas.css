@@ -203,7 +203,7 @@ footer p {
   width: 75px;
   heigt: auto;
   text-align: center;
-  font-size: auto;
+  font-size: 1em;
 }
 }
 
@@ -224,7 +224,7 @@ footer p {
   width: 50px;
   heigt: auto;
   text-align: center;
-  font-size: auto;
+  font-size: 1em;
 }
 
   #Destacados .contenedor_ofertas {
