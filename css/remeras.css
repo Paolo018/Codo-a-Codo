@@ -1,156 +1,166 @@
 * {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  header,
-  main,
-  footer,
-  nav {
-    padding: 25px;
-  }
-  
-  body {
-    background-color: ivory;
-  }
-  
-  header {
-    background-color: ivory;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header h1 {
-    color: #BFA181;
-  }
-  
-  .contenedor_ofertas img {
-    width: 100px;
-    height: 100px;
-    max-width: 100%; 
-  }
-  
-  .button {
-    background-color: rgb(248, 248, 212);
-    padding: 15px;
-    color: #BFA181;
-    border-radius: 5px;
-    transition: 0.5s;
-    text-decoration: none;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .button:hover {
-    color: black; 
-    background-color: #BFA181;
-  }
-  
-  nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    position: sticky;
-    top: 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-  }
-  
-  nav ul li a {
-    display: inline-block;
-    padding: 10px;
-    margin-right: 10px;
-  }
-  
-    .menu {
-    position: relative;
-  }
-  
-    .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-  }
-  
-    .menu li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-    .menu a {
-    text-decoration: none;
-    color: #BFA181;
-  }
-  
-    .menu:hover ul {
-    display: block;
-  }
-  
-  main {
-    padding: 0;
-  }
-  
-  #Destacados {
-    min-height: 50vh;
-  }
-  
-  .titulo {
-    background-color: rgb(248, 248, 212);
-    padding: 15px;
-    padding-left: 25px;
-    font-size: 18px;
-    color: #BFA181;
-  }
-  
-  #Destacados .contenedor_ofertas {
-    display: flex;
-    min-height: 25vh;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  #Destacados .contenedor_ofertas article {
-    width: 20%;
-    height: 400px;
-    margin: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .contenedor_ofertas article h4 {
-    flex: 1;
-    padding-top: 10px;
-  }
-  
-  .contenedor_ofertas article img {
-    width: 80%;
-    height: 80%;
-    border-radius: 15px;
-  }
-  
-  .contenedor_ofertas article p {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    cursor: pointer;
-  }
-    #btnInicio {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header,
+main,
+footer,
+nav {
+  padding: 25px;
+}
+
+body {
+  background-color: ivory;
+}
+
+header {
+  background-color: ivory;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* líneas múltiples */
+}
+
+header h1 {
+  color: #BFA181;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: 100%; 
+  object-fit: cover; /* mantener la proporción imágenes */
+}
+
+.button {
+  background-color: rgb(248, 248, 212);
+  padding: 15px;
+  color: #BFA181;
+  border-radius: 5px;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  color: black; 
+  background-color: #BFA181;
+}
+
+nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+nav ul li {
+  margin-right: 10px;
+  margin-bottom: 10px; 
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #BFA181;
+}
+
+.menu:hover ul {
+  display: block;
+}
+
+main {
+  padding: 0;
+}
+
+#Destacados {
+  min-height: 50vh;
+}
+
+.titulo {
+  background-color: rgb(248, 248, 212);
+  padding: 15px;
+  padding-left: 25px;
+  font-size: 18px;
+  color: #BFA181;
+}
+
+#Destacados .contenedor_ofertas {
+  display: flex;
+  flex-wrap: wrap; 
+  min-height: 25vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#Destacados .contenedor_ofertas article {
+  width: 100%;
+  max-width: 20%;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor_ofertas article h4 {
+  flex: 1;
+  padding-top: 10px;
+}
+
+.contenedor_ofertas article img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  cursor: pointer;
+  object-fit: cover; /*  para mantener la proporción  */
+}
+
+.contenedor_ofertas article p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center; 
+}
+  #btnInicio {
     position: fixed; 
     bottom: 20px;
     right: 20px;
@@ -162,32 +172,37 @@
     cursor: pointer;
     z-index: 999; 
 }
-  footer {
-    background-color: black;
-    text-align: center;
-    padding: 2%;
-    position: relative;
-    left: 0;
-    bottom: 0;
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: #BFA181;
+}
+
+@media screen and (max-width: 800px) {
+  #Destacados .contenedor_ofertas {
+    flex-direction: column;
+    align-items: center; 
     width: 100%;
   }
-  
-  footer p {
-    color: #BFA181
+}
+
+@media screen and (max-width: 320px) {
+  header, nav ul {
+    flex-direction: column;
+    align-items: center;
   }
 
-  @media screen and (max-width: 800px) {
-    #Destacados .contenedor_ofertas {
-      height: auto;
-      width: 500px;
-      flex-direction: column;
-    }
+  #Destacados .contenedor_ofertas {
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
   }
-  
-  @media screen and (max-width: 320px) {
-    #Destacados .contenedor_ofertas {
-      height: auto;
-      width: 320px;
-      flex-direction: column;
-  }
-  }
+}
