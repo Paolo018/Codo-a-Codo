@@ -2,8 +2,7 @@ function scrollToTop() {
     window.scrollTo({
         top: 0,
         behavior: "smooth"
-    });
-}
+    });} //Es para el btnInicio
 
 // Limpiar el formulario de login
 document.getElementById("clearButton").addEventListener("click", function() {
