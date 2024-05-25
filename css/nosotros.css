@@ -123,11 +123,11 @@
     text-align: center;
     padding: 2%;
     left: 0;
-    position: absolute;
+    position: sticky;
     bottom: 0;
     width: 100%;
   }
-  
+
   footer p {
     color: #BFA181
   }
