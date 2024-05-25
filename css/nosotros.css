@@ -109,7 +109,7 @@
 
   #Nosotros p {
     color: #BFA181;
-    padding: 20px;
+    padding: 1em;
     text-align: center;
   }
 
@@ -118,7 +118,7 @@
     background-color: black;
     text-align: center;
     padding: 2%;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -130,8 +130,9 @@
   
   @media screen and (max-width: 800px) {
     #Nosotros p {
+      margin: 0.2em 0.2em 0.2em 0.2em;
       height: auto;
-      width: 97%;
+      width: auto;
       flex-direction: column;
     }
 
@@ -139,8 +140,9 @@
   
   @media screen and (max-width: 320px) {
     #Nosotros p {
+      margin: 0.1em 0.1em 0.1em 0.1em;
       height: auto;
-       width: 97%;
+       width: auto;
       flex-direction: column;
   }
   }
