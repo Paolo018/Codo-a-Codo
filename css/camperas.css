@@ -199,11 +199,11 @@ footer p {
   border-radius: 4px;
   transition: 0.5s;
   text-decoration: none;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   width: 75px;
   heigt: auto;
   text-align: center;
-  font-size: 1em;
+  font-size: 70&;
 }
 }
 
@@ -220,11 +220,11 @@ footer p {
   border-radius: 4px;
   transition: 0.5s;
   text-decoration: none;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   width: 50px;
   heigt: auto;
   text-align: center;
-  font-size: 1em;
+  font-size: 50%;
 }
 
   #Destacados .contenedor_ofertas {
