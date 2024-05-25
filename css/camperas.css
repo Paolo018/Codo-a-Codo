@@ -193,8 +193,8 @@ footer p {
     width: 100%;
   }
   .button {
+  width: 70%;
   heigth: auto;
-  width: 80%;
 }
 }
 
@@ -205,8 +205,8 @@ footer p {
   }
   
   .button {
+  width: 45%;
   heigth: auto;
-  width: 60%;
 }
 
   #Destacados .contenedor_ofertas {
