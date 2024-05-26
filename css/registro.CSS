@@ -1,221 +1,151 @@
-* {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 * {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
   margin: 0;
   padding: 0;
-}
-input[type="checkbox"], input[type="radio"], input[type="number"] {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-form div {
-  margin-top: 15px;
-}
-
-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-header,
-main,
-footer,
-nav {
-  padding: 25px;
+  box-sizing: border-box;
 }
 
 body {
   background-color: ivory;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
 }
 
+/* Estilos para el header */
 header {
   background-color: ivory;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  padding: 1rem;
 }
 
 header h1 {
   color: #BFA181;
+  flex: 1; 
+  text-align: center; 
 }
 
-.button {
-  background-color: rgb(248, 248, 212);
-  padding: 15px;
-  color: #BFA181;
-  border-radius: 5px;
-  transition: 0.5s;
-  text-decoration: none;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.button:hover {
-  color: black;
-  background-color: #BFA181;
-}
-
-nav {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  position: sticky;
-  top: 0;
-}
-
+/* Estilos para la navegación */
 nav ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; 
 }
 
 nav ul li {
-  margin-right: 10px;
-  margin-bottom: 10px; /* separación vertical */
+  margin: 0.5rem;
 }
 
 nav ul li a {
   display: block;
-  padding: 10px;
+  padding: 0.5rem 1rem;
 }
 
-.menu {
-  position: relative;
-}
-
+/* Estilos para el menú desplegable */
 .menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
-}
-
-.menu li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #BFA181;
+  z-index: 1; /* Asegura que el menú desplegable esté por encima de otros elementos */
 }
 
 .menu:hover ul {
   display: block;
 }
 
-body {
-    background-color: ivory; /* Fondo color marfil */
+
+main {
+  flex: 1; /* Permite que el contenido principal se expanda y ocupe el espacio disponible */
+  padding: 1rem;
 }
 
-header,
-main,
-footer,
-nav {
-  padding: 25px;
-}
-
-body {
-  background-color: ivory;
-}
-
-header {
-  background-color: ivory;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; /* líneas múltiples */
-}
-
-header h1 {
+.titulo {
+  background-color: rgb(248, 248, 212);
+  padding: 1rem;
+  font-size: 1.2rem;
   color: #BFA181;
 }
 
+#Destacados .contenedor_ofertas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#Destacados .contenedor_ofertas article {
+  flex: 0 0 calc(25% - 1rem); 
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
 .registro-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
 }
 
 .registro-form {
-    background-color: rgb(248, 248, 212); /* Fondo amarillo claro */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
+  background-color: rgb(248, 248, 212);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
 }
 
-.registro-form h2 {
-    color: #BFA181; /* Marrón */
-    margin-bottom: 20px;
-    font-size: 24px;
-}
+/* ... (otros estilos para el formulario) ... */
 
-.registro-form label {
-    display: block;
-    margin-bottom: 10px;
-    color: #333333; /* Gris oscuro */
-    text-align: left;
-    font-weight: 500;
-}
-
-.registro-form input, .registro-form select {
-    width: 100%;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd; /* Gris claro */
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: ivory; /* Fondo marfil */
-}
-
-.registro-form .button {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #BFA181; /* Marrón */
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.registro-form .button:hover {
-    background-color: #498356; /* Verde oscuro (al pasar el mouse) */
-}
-
-
+/* Estilos para el footer */
 footer {
   background-color: black;
+  color: #BFA181;
   text-align: center;
-  padding: 2%;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  padding: 1rem;
+  margin-top: auto; /* Empuja el footer al final del contenido */
 }
 
-footer p {
+/* Estilos para botones */
+.button {
+  background-color: rgb(248, 248, 212);
+  padding: 0.75rem 1.5rem;
   color: #BFA181;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+}
+
+.button:hover {
+  background-color: #BFA181;
+  color: black;
+}
+
+
+@media (max-width: 800px) {
+  /* Ajustes para tablets y pantallas más pequeñas */
+  #Destacados .contenedor_ofertas article {
+    flex: 0 0 calc(50% - 1rem); /* Dos artículos por fila en tablets */
+  }
+}
+
+@media (max-width: 320px) {
+  /* Ajustes para móviles */
+  #Destacados .contenedor_ofertas article {
+    flex: 0 0 100%; /* Un artículo por fila en móviles */
+  }
+
+  .registro-form {
+    max-width: 100%; /* El formulario ocupa todo el ancho en móviles */
+  }
 }
