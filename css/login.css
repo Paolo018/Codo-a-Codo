@@ -93,6 +93,12 @@
     color: white;
 }
 
+footer img {
+  background-color: transparent;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
 @media (max-width: 600px) {
     .login-form {
         padding: 20px;
