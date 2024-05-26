@@ -169,7 +169,7 @@ main {
 #Destacados .contenedor_ofertas article {
     width: 20%;
     margin: 25px;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
