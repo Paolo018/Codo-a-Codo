@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center; 
+}
+
+/* registro.css */
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: ivory; /* Fondo color marfil */
+}
+
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.registro-form {
+    background-color: rgb(248, 248, 212); /* Fondo amarillo claro */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.registro-form h2 {
+    color: #BFA181; /* Marrón */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.registro-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333333; /* Gris oscuro */
+    text-align: left;
+    font-weight: 500;
+}
+
+.registro-form input, .registro-form select {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Gris claro */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: ivory; /* Fondo marfil */
+}
+
+.registro-form .button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #BFA181; /* Marrón */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registro-form .button:hover {
+    background-color: #498356; /* Verde oscuro (al pasar el mouse) */
+}
