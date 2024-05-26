@@ -1,19 +1,179 @@
-body {
-    margin: 5px;
-    padding: 5px;
-    font-family: Arial, sans-serif;
-    text-align: center; 
-}
-
 * {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+input[type="checkbox"], input[type="radio"], input[type="number"] {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+form div {
+  margin-top: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Button styles using Bootstrap */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Bootstrap */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+#TallesyQ {
+  display: none;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: 100%; /*  no pase el contenedor */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header,
+main,
+footer,
+nav {
+  padding: 25px;
+}
+
+body {
+  background-color: ivory;
+}
+
+header {
+  background-color: ivory;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  color: #BFA181;
+}
+
+.button {
+  background-color: rgb(248, 248, 212);
+  padding: 15px;
+  color: #BFA181;
+  border-radius: 5px;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  color: black;
+  background-color: #BFA181;
+}
+
+nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-right: 10px;
+  margin-bottom: 10px; /* separación vertical */
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #BFA181;
+}
+
+.menu:hover ul {
+  display: block;
+}
 
 body {
     background-color: ivory; /* Fondo color marfil */
+}
+
+header,
+main,
+footer,
+nav {
+  padding: 25px;
+}
+
+body {
+  background-color: ivory;
+}
+
+header {
+  background-color: ivory;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* líneas múltiples */
+}
+
+header h1 {
+  color: #BFA181;
 }
 
 .registro-container {
