@@ -1,4 +1,3 @@
-
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -10,10 +9,10 @@ body {
   background-color: ivory;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 
-/* Estilos para el header */
+
 header {
   background-color: ivory;
   display: flex;
@@ -24,72 +23,25 @@ header {
 
 header h1 {
   color: #BFA181;
-  flex: 1; 
-  text-align: center; 
-}
-
-/* Estilos para la navegación */
-nav ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-}
-
-nav ul li {
-  margin: 0.5rem;
-}
-
-nav ul li a {
-  display: block;
-  padding: 0.5rem 1rem;
-}
-
-/* Estilos para el menú desplegable */
-.menu ul {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  z-index: 1; /* Asegura que el menú desplegable esté por encima de otros elementos */
-}
-
-.menu:hover ul {
-  display: block;
+  flex: 1;
+  text-align: center;
 }
 
 
 main {
-  flex: 1; /* Permite que el contenido principal se expanda y ocupe el espacio disponible */
-  padding: 1rem;
-}
-
-.titulo {
-  background-color: rgb(248, 248, 212);
-  padding: 1rem;
-  font-size: 1.2rem;
-  color: #BFA181;
-}
-
-#Destacados .contenedor_ofertas {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+  flex: 1;                
+  padding: 1rem;
 }
-
-#Destacados .contenedor_ofertas article {
-  flex: 0 0 calc(25% - 1rem); 
-  box-sizing: border-box;
-  text-align: center;
-}
-
 
 .registro-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+  width: 100%;
 }
 
 .registro-form {
@@ -97,23 +49,59 @@ main {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
   text-align: center;
 }
 
-/* ... (otros estilos para el formulario) ... */
+.registro-form h2 {
+  color: #BFA181;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
 
-/* Estilos para el footer */
+.registro-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  text-align: left;
+  font-weight: 500;
+}
+
+.registro-form input,
+.registro-form select {
+  width: calc(100% - 1.5rem); 
+  padding: 0.75rem;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: ivory;
+}
+
+.registro-form button {
+  background-color: #BFA181;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.registro-form button:hover {
+  background-color: #498356;
+}
+
+
 footer {
   background-color: black;
   color: #BFA181;
   text-align: center;
   padding: 1rem;
-  margin-top: auto; /* Empuja el footer al final del contenido */
+  margin-top: auto; 
 }
 
-/* Estilos para botones */
+
 .button {
   background-color: rgb(248, 248, 212);
   padding: 0.75rem 1.5rem;
@@ -123,7 +111,7 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
@@ -131,21 +119,23 @@ footer {
   color: black;
 }
 
-
+/* Media queries para responsive design */
 @media (max-width: 800px) {
-  /* Ajustes para tablets y pantallas más pequeñas */
-  #Destacados .contenedor_ofertas article {
-    flex: 0 0 calc(50% - 1rem); /* Dos artículos por fila en tablets */
+  .registro-form {
+    max-width: 90%;
   }
 }
 
 @media (max-width: 320px) {
   /* Ajustes para móviles */
-  #Destacados .contenedor_ofertas article {
-    flex: 0 0 100%; /* Un artículo por fila en móviles */
+  .registro-form {
+    max-width: 100%;
+    padding: 1.5rem;
   }
 
-  .registro-form {
-    max-width: 100%; /* El formulario ocupa todo el ancho en móviles */
+  .registro-form input,
+  .registro-form select {
+    font-size: 14px;
   }
 }
+
