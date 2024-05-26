@@ -1,11 +1,9 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 5px;
     font-family: Arial, sans-serif;
     text-align: center; 
 }
-
-/* registro.css */
 
 * {
     font-family: "Montserrat", sans-serif;
@@ -75,4 +73,18 @@ body {
 
 .registro-form .button:hover {
     background-color: #498356; /* Verde oscuro (al pasar el mouse) */
+}
+
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: #BFA181;
 }
