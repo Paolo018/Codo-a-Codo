@@ -208,6 +208,13 @@ footer p {
   color: #BFA181;
 }
 
+footer img {
+  background-color: transparent;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
 @media screen and (max-width: 800px) {
   #Destacados .contenedor_ofertas {
     height: auto;
