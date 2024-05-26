@@ -160,21 +160,22 @@ main {
 }
 
 #Destacados .contenedor_ofertas {
-  display: flex;
-  min-height: 25vh;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: stretch; 
 }
 
 #Destacados .contenedor_ofertas article {
-  width: 20%;
-  margin: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: 20%;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
 }
+
 
 .contenedor_ofertas article h4 {
   flex: 1;
