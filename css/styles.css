@@ -282,14 +282,10 @@ button {
 /* Bootstrap */
 .btn-primary {
   background-color: #BFA181;
-  border-color: #BFA189;
 }
 
 .btn-primary:hover {
   background-color: #BFA185;
-  border-color: #BFA195;
+  border-color: #BFA189;
 }
-
-
-
 
