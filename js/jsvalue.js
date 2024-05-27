@@ -10,10 +10,24 @@ document.getElementById("clearButton").addEventListener("click", function() {
 document.getElementById("loginForm").reset();});
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Fetch para obtener la cotización del peso argentino contra otras monedas
+    fetch('https://api.exchangerate-api.com/v4/latest/ARS')
+        .then(response => response.json())
+        .then(data => {
+            const rates = data.rates;
+            document.getElementById('cotizacion-USD').textContent = rates.USD;
+            document.getElementById('cotizacion-EUR').textContent = rates.EUR;
+            document.getElementById('cotizacion-BRL').textContent = rates.BRL;
+            document.getElementById('cotizacion-UYU').textContent = rates.UYU;
+        })
+        .catch(error => {
+            console.error('Error fetching exchange rates:', error);
+        });
+
     // Validación del formulario de registro
-    const registroForm = document.getElementById('registroForm');
-    if (registroForm) {
-        registroForm.addEventListener('submit', (event) => {
+    const registerForm = document.getElementById('registerForm');
+    if (registerForm) {
+        registerForm.addEventListener('submit', (event) => {
             const password = document.getElementById('password').value;
             const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
@@ -86,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 pedido: pedido
             };
 
-            fetch('https://example.com/send-email', {
+            fetch('https://example.com/send-email', { // Reemplaza con tu endpoint real
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -102,19 +116,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
-    // Fetch para obtener la cotización del peso argentino contra otras monedas
-    fetch('https://api.exchangerate-api.com/v4/latest/ARS')
-        .then(response => response.json())
-        .then(data => {
-            const rates = data.rates;
-            document.getElementById('cotizacion-USD').textContent = rates.USD;
-            document.getElementById('cotizacion-EUR').textContent = rates.EUR;
-            document.getElementById('cotizacion-BRL').textContent = rates.BRL;
-            document.getElementById('cotizacion-UYU').textContent = rates.UYU;
-        })
-        .catch(error => {
-            console.error('Error fetching exchange rates:', error);
-        });
 });
-
