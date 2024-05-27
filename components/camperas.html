@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divina boutique</title>
     <link rel="stylesheet" href="/css/camperas.css">
+    <link rel="icon" href="..\src/img/icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
 <body>
     <header>
         <div class="logo">
-            
+               <img src="..\src/img/icon2.png" alt="">
         </div>
         <h1>Divina boutique</h1>
-        <a id="Login" class="button" href="">Login</a>
     </header>
         <nav>
             <ul>
@@ -32,6 +30,9 @@
                 </li>
                 <li><a href="/components/nosotros.html" class="button">Nosotros</a></li>
                 <li><a href="/components/contacto.html" class="button">Contacto</a></li>
+                <li><a id="Login" class="button" href="/components/login.html">Login</a></li>
+                <li><a id="Registro" class="button" href="/components/registro.html">Registrarse</a></li>
+
             </ul>
         </nav>
     <main>
@@ -45,12 +46,12 @@
                         <p>$76.000</p>
                     </article>
                     <article>
-                        <img src="/src/img/camperas/cuero flama.webp" alt="">
+                        <img src="/src/img/camperas/cuero-flama.webp" alt="">
                         <h4>Campera de cuero</h4>
                         <p>$120.000</p>
                     </article>
                     <article>
-                        <img src="/src/img/camperas/campera jean.webp" alt="">
+                        <img src="/src/img/camperas/campera-jean.webp" alt="">
                         <h4>Campera de jean</h4>
                         <p>$80.000</p>
                     </article>
@@ -79,7 +80,7 @@
                         <p>$105.000</p>
                     </article>
                     <article>
-                        <img src="/src/img/camperas/campera negra.webp" alt="">
+                        <img src="/src/img/camperas/campera-negra.webp" alt="">
                         <h4>Campera puffer</h4>
                         <p>$89.990</p>
                     </article>
@@ -87,8 +88,11 @@
             </section>
         </section>
     </main>
+    <button onclick="scrollToTop()" id="btnInicio">Inicio</button>
     <footer>
         <p>Codo a Codo 2024 - Todos los derechos reservados</p>
     </footer>
+<button onclick="scrollToTop()" id="btnInicio">Inicio</button>
 </body>
+<script src="/js/jsvalue.js"></script>
 </html>

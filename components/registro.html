@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divina Boutique</title>
+    <link rel="stylesheet" href="/css/registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <h1>Divina Boutique</h1>
+        <img src="..\src/img/icon2.png" alt="">
+        <a id="Login" class="button" href="..\index.html">Salir</a>
+    </header>
+    <main>
+            <div class="registro-container">
+                <form class="registro-form" id="registroForm" action="/components/registro-process.php" method="POST">
+                    <h2>Registro</h2>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                    <label for="password">Numero de Documento:</label>
+                    <input type="documento" id="documento" name="documento" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad">
+                    <label for="provincia">Provincia:</label>
+                    <input type="text" id="provincia" name="provincia">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                    <label for="tipoFactura">Tipo de Factura:</label>
+                    <select id="tipoFactura" name="tipoFactura">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                    <button type="submit" class="button">Registrarse</button>
+                </form>
+            </div>
+    </main>
+    <footer>
+        <p>Codo a Codo - Todos los derechos reservados</p>
+        <p>&copy; 2024 Codo a Codo</p>
+    </footer>
+     <script src="/js/jsvalue.js"></script>
+</body>
+</html>

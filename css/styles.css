@@ -6,6 +6,48 @@
   margin: 0;
   padding: 0;
 }
+input[type="checkbox"], input[type="radio"], input[type="number"] {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+form div {
+  margin-top: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Button styles using Bootstrap */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Bootstrap */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+#TallesyQ {
+  display: none;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: 100%; /*  no pase el contenedor */
+}
 
 html {
   scroll-behavior: smooth;
@@ -27,15 +69,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header h1 {
   color: #BFA181;
-}
-
-.contenedor_ofertas img {
-  width: 100px;
-  height: 100px;
 }
 
 .button {
@@ -49,7 +87,7 @@ header h1 {
 }
 
 .button:hover {
-  color: black; 
+  color: black;
   background-color: #BFA181;
 }
 
@@ -64,19 +102,24 @@ nav {
 nav ul {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-right: 10px;
+  margin-bottom: 10px; /* separación vertical */
 }
 
 nav ul li a {
-  display: inline-block;
+  display: block;
   padding: 10px;
-  margin-right: 10px;
 }
 
-  .menu {
+.menu {
   position: relative;
 }
 
-  .menu ul {
+.menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -86,17 +129,17 @@ nav ul li a {
   border: 1px solid #ddd;
 }
 
-  .menu li {
+.menu li {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
 
-  .menu a {
+.menu a {
   text-decoration: none;
   color: #BFA181;
 }
 
-  .menu:hover ul {
+.menu:hover ul {
   display: block;
 }
 
@@ -117,21 +160,22 @@ main {
 }
 
 #Destacados .contenedor_ofertas {
-  display: flex;
-  min-height: 25vh;
-  justify-content: space-evenly;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: stretch; 
 }
 
 #Destacados .contenedor_ofertas article {
-  width: 20%;
-  height: 400px;
-  margin: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: 20%;
+    margin: 25px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
 }
+
 
 .contenedor_ofertas article h4 {
   flex: 1;
@@ -139,8 +183,8 @@ main {
 }
 
 .contenedor_ofertas article img {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: auto;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -148,42 +192,100 @@ main {
 .contenedor_ofertas article p {
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: center; 
 }
 
 footer {
   background-color: black;
   text-align: center;
   padding: 2%;
-  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
 }
 
 footer p {
-  color: #BFA181
+  color: #BFA181;
+}
+
+footer img {
+  background-color: transparent;
+  height: auto;
+  width: auto;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 800px) {
   #Destacados .contenedor_ofertas {
     height: auto;
-    width: 500px;
+    width: 100%; 
     flex-direction: column;
   }
 
   footer {
-    position: fixed;
+    position: sticky;
   }
 }
 
 @media screen and (max-width: 320px) {
+  header, nav ul {
+        flex-direction: row;
+        align-items: flex-start;
+  }
+
   #Destacados .contenedor_ofertas {
     height: auto;
-    width: 320px;
+    width: 100%; /* Ajusta el ancho */
     flex-direction: column;
+  }
+  
+  .button {
+  background-color: rgb(248, 248, 212);
+  padding: 7px;
+  color: #BFA181;
+  border-radius: 4px;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 50px;
+  height: auto;
+  text-align: center;
+  font-size: 70%;
+}
+    footer {
+    position: sticky;
+  }
 }
 
-footer {
-  position: fixed;
+input[type="checkbox"], input[type="radio"] {
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
+
+form div {
+  margin-top: 15px;
 }
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Button styles using Bootstrap */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Bootstrap */
+.btn-primary {
+  background-color: #BFA181;
+}
+
+.btn-primary:hover {
+  background-color: #BFA185;
+  border-color: #BFA189;
+}
+

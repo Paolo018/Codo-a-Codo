@@ -1,0 +1,141 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: ivory;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  
+  header {
+    background-color: ivory;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    color: #BFA181;
+    flex: 1;
+    text-align: center;
+  }
+  
+  
+  main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    flex: 1;                
+    padding: 1rem;
+  }
+  
+  .registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .registro-form {
+    background-color: rgb(248, 248, 212);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .registro-form h2 {
+    color: #BFA181;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .registro-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  .registro-form input,
+  .registro-form select {
+    width: calc(100% - 1.5rem); 
+    padding: 0.75rem;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: ivory;
+  }
+  
+  .registro-form button {
+    background-color: #BFA181;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .registro-form button:hover {
+    background-color: #498356;
+  }
+  
+  
+  footer {
+    background-color: black;
+    color: #BFA181;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; 
+  }
+  
+  
+  .button {
+    background-color: rgb(248, 248, 212);
+    padding: 0.75rem 1.5rem;
+    color: #BFA181;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:hover {
+    background-color: #BFA181;
+    color: black;
+  }
+  
+  /* Media queries para responsive design */
+  @media (max-width: 800px) {
+    .registro-form {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    /* Ajustes para móviles */
+    .registro-form {
+      max-width: 100%;
+      padding: 1.5rem;
+    }
+  
+    .registro-form input,
+    .registro-form select {
+      font-size: 14px;
+    }
+  }
+  
