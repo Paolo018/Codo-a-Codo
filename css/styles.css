@@ -22,6 +22,10 @@ body {
   background-color: ivory;
 }
 
+#Login {
+  display: block;
+}
+
 header {
   background-color: ivory;
   display: flex;
@@ -118,19 +122,18 @@ main {
 
 #Destacados .contenedor_ofertas {
   display: flex;
-  min-height: 25vh;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 }
 
 #Destacados .contenedor_ofertas article {
   width: 20%;
-  height: 400px;
   margin: 25px;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .contenedor_ofertas article h4 {
@@ -139,8 +142,8 @@ main {
 }
 
 .contenedor_ofertas article img {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: auto;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -148,13 +151,14 @@ main {
 .contenedor_ofertas article p {
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 footer {
   background-color: black;
   text-align: center;
   padding: 2%;
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -166,24 +170,27 @@ footer p {
 
 @media screen and (max-width: 800px) {
   #Destacados .contenedor_ofertas {
-    height: auto;
-    width: 500px;
     flex-direction: column;
+    align-items: center;
   }
-
-  footer {
-    position: fixed;
+  .contenedor_ofertas article img {
+    width: 300px;
+    height: auto;
+  }
+  .titulo, footer {
+    width: 100vh;
   }
 }
 
 @media screen and (max-width: 320px) {
   #Destacados .contenedor_ofertas {
-    height: auto;
-    width: 320px;
     flex-direction: column;
 }
-
-footer {
-  position: fixed;
+.contenedor_ofertas article img {
+  width: 250px;
+  height: auto;
+}
+.titulo, footer {
+  width: 100vh;
 }
 }

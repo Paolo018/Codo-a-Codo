@@ -122,6 +122,7 @@
     background-color: rgb(248, 248, 212);
     padding: 25px;
     color: #BFA181;
+    border-radius: 5%;
   }
   
   #Contacto form input, #Contacto form textarea {
@@ -144,11 +145,23 @@
     border: 1px solid red;
   }
   
+  #Maps iframe {
+     display: block;
+     margin: 25px auto;
+     padding: 25px;
+     height: 35vh;
+     width: 50vh;
+     border-radius: 10%;
+     overflow: hidden;
+     border: 5px solid #BFA181;
+  }
+  
+  
   footer {
     background-color: black;
     text-align: center;
     padding: 2%;
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -164,6 +177,9 @@
       width: 500px;
       flex-direction: column;
     }
+    .titulo, footer {
+      width: 100vh;
+    }
   }
   
   @media screen and (max-width: 320px) {
@@ -171,5 +187,8 @@
       height: auto;
       width: 320px;
       flex-direction: column;
+  }
+  .titulo, footer {
+    width: 100vh;
   }
   }
