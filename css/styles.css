@@ -306,3 +306,9 @@ form label {
 .section #datos .section #cotizaciones h6 {
  font-size: auto;
 }
+
+
+main
+ {
+  padding: 25px, 25px, 25px, 25px;
+}
