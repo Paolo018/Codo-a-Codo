@@ -1,4 +1,4 @@
-//Validaciones de formulario Contacto.
+
 
 function validarFormulario() {
     var asunto = document.getElementById('Asunto').value;
