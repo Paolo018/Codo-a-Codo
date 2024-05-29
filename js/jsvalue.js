@@ -38,82 +38,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Habilitar campos de selección de talles y cantidad al seleccionar productos
-    const productCheckboxes = document.querySelectorAll('.product-checkbox');
-    productCheckboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', (event) => {
-            const parentArticle = event.target.closest('article');
-            const sizeRadios = parentArticle.querySelectorAll('input[type="radio"]');
-            const quantityInput = parentArticle.querySelector('input[type="number"]');
-            sizeRadios.forEach(radio => radio.disabled = !event.target.checked);
-            quantityInput.disabled = !event.target.checked;
-        });
-    });
 
-    // Validación al enviar el formulario de productos
-    const productForm = document.getElementById('product-form');
-    if (productForm) {
-        productForm.addEventListener('submit', (event) => {
-            let valid = true;
-            const selectedProducts = document.querySelectorAll('.product-checkbox:checked');
-            selectedProducts.forEach(checkbox => {
-                const parentArticle = checkbox.closest('article');
-                const selectedSize = parentArticle.querySelector('input[type="radio"]:checked');
-                const quantity = parentArticle.querySelector('input[type="number"]').value;
-                if (!selectedSize || !quantity) {
-                    valid = false;
-                }
-            });
-
-            if (!valid) {
-                alert('Debe seleccionar un talle y una cantidad para cada producto.');
-                event.preventDefault();
-            }
-        });
-    }
-
-    // Enviar los datos básicos del usuario y los datos del pedido por correo
-    const realizarPedidoBtn = document.getElementById('realizar-pedido-btn');
-    if (realizarPedidoBtn) {
-        realizarPedidoBtn.addEventListener('click', () => {
-            const selectedProducts = document.querySelectorAll('.product-checkbox:checked');
-            let pedido = [];
-            selectedProducts.forEach(checkbox => {
-                const parentArticle = checkbox.closest('article');
-                const selectedSize = parentArticle.querySelector('input[type="radio"]:checked').value;
-                const quantity = parentArticle.querySelector('input[type="number"]').value;
-                pedido.push({
-                    producto: checkbox.value,
-                    talle: selectedSize,
-                    cantidad: quantity
-                });
-            });
-
-            const user = {
-                nombre: document.getElementById('Name').value,
-                apellido: document.getElementById('Apellido').value,
-                email: document.getElementById('Email').value
-            };
-
-            const data = {
-                usuario: user,
-                pedido: pedido
-            };
-
-            fetch('https://example.com/send-email', { // Reemplaza con tu endpoint real
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert('Pedido enviado con éxito.');
-            })
-            .catch(error => {
-                alert('Error al enviar el pedido.');
-            });
-        });
-    }
-});
+      async function mostrarCotizaciones() {
+        try {
+          const response = await fetch('https://api.bluelytics.com.ar/v2/latest');
+          const data = await response.json();
+      
+          document.getElementById("cotizacion-USD").textContent = data.blue.value_sell;
+          document.getElementById("cotizacion-EUR").textContent = data.blue_euro.value_sell;
+      
+        } catch (error) {
+          console.error("Error al obtener las cotizaciones:", error);
+          document.getElementById("cotizacion-USD").textContent = "Sin datos";
+          document.getElementById("cotizacion-EUR").textContent = "Sin datos";
+        }
+      }
+    
+      document.addEventListener('DOMContentLoaded', mostrarCotizaciones);
