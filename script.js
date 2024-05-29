@@ -43,3 +43,16 @@ function validarFormulario() {
             }
             }
         })
+
+
+    //let contenedor = document.querySelector("form-group");
+    //let buttonQuitar = document.querySelector("#Limpiar");
+    //buttonQuitar.addEventListener("click", LimpiarSeleccion);
+
+
+
+    //function LimpiarSeleccion(){
+        //if(contenedor.childElementCount > 0){
+            //contenedor.removeChild(contenedor.lastChild);
+        //}
+    //}

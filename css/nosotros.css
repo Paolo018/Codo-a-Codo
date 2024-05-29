@@ -113,12 +113,37 @@
     text-align: center;
   }
 
+  #Nosotros {
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  #Foto {
+    border-radius: 999px;
+    background-color: antiquewhite;
+    width: 70px;
+  }
+
+  .controles {
+    margin-top: 50px;
+    align-items: center;
+  }
+
+  .btn-clean {
+    border: none;
+    background: none;
+    color: #666;
+    margin-left: 100px;
+    cursor: pointer;
+  }
+  
 
   footer {
     background-color: black;
     text-align: center;
     padding: 2%;
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
