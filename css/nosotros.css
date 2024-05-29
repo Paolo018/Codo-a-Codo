@@ -114,6 +114,11 @@
   }
 
   #Nosotros {
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  #Descubrinos {
     padding: 25px;
     border-radius: 25px;
     text-align: center;

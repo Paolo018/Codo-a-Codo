@@ -20,7 +20,7 @@ function AgregarPersona(){
         let nuevaPersona = personaCopia.cloneNode(true);
             
         nuevaPersona.querySelector("#Foto").src = data.results[0].picture.large;
-        nuevaPersona.querySelector("#Foto").alt = "foto CV";
+        nuevaPersona.querySelector("#Foto").alt = "Descubrinos";
         nuevaPersona.querySelector("#Nombre").innerHTML = data.results[0].name.first + " " + data.results[0].name.last;
         
         contenedor.appendChild(nuevaPersona);    
