@@ -159,7 +159,13 @@
       width: 500px;
       flex-direction: column;
     }
-
+    .controles #Agregar, #Quitar{
+      flex-direction: column;
+      margin-top: 50px;
+    }
+    #Quitar {
+      margin-right: 80px;
+    }
   }
   
   @media screen and (max-width: 320px) {
