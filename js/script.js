@@ -45,14 +45,13 @@ function validarFormulario() {
         })
 
 
-    //let contenedor = document.querySelector("form-group");
-    //let buttonQuitar = document.querySelector("#Limpiar");
-    //buttonQuitar.addEventListener("click", LimpiarSeleccion);
 
-
-
-    //function LimpiarSeleccion(){
-        //if(contenedor.childElementCount > 0){
-            //contenedor.removeChild(contenedor.lastChild);
-        //}
-    //}
+        document.addEventListener('DOMContentLoaded', function() {
+            var usernameInput = document.getElementById('username');
+            var passwordInput = document.getElementById('password');
+            var clearButton = document.getElementById('clearButton');
+            clearButton.addEventListener('click', function() {
+                usernameInput.value = '';
+                passwordInput.value = '';
+            });
+        });

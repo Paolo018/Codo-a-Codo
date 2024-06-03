@@ -15,14 +15,11 @@ function AgregarPersona(){
     fetch("https://randomuser.me/api")
     .then(response => response.json())
     .then(data => {
-        // Procesamiento de la info que llega de la API
-        
+        // Procesamiento API
         let nuevaPersona = personaCopia.cloneNode(true);
-            
         nuevaPersona.querySelector("#Foto").src = data.results[0].picture.large;
         nuevaPersona.querySelector("#Foto").alt = "Descubrinos";
-        nuevaPersona.querySelector("#Nombre").innerHTML = data.results[0].name.first + " " + data.results[0].name.last;
-        
+        nuevaPersona.querySelector("#Nombre").innerHTML = data.results[0].name.first + " " + data.results[0].name.last; 
         contenedor.appendChild(nuevaPersona);    
         })
     .catch(error => console.log("Ocurrió un error! " + error));

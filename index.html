@@ -12,9 +12,9 @@
 <body>
     <header>
         <div class="logo">
-        <h1>Divina Boutique</h1>
-        <a id="login" class="button" href="/components/login.html">Login</a>
-        <a id="Registro" class="button" href="/components/registro.html">Registrarse</a>
+            <h1>Divina Boutique</h1>
+            <a id="login" class="button" href="/components/login.html">Login</a>
+            <a id="Registro" class="button" href="/components/registro.html">Registrarse</a>
         </div>
     </header>
     <nav>
@@ -43,36 +43,36 @@
                         <article>
                             <img src="/src/img/camperas/tapado.webp" alt="Tapado">
                             <h4>Tapado</h4>
-                            <p>$80.000</p>
-                            <input type="checkbox" name="product" value="Tapado" class="product-checkbox" Id="seleccion" data-target="#TallesyQTapadoDT">
-                            <section id="TallesyQTapado" class="SeleccionTalleT" name="Tapado">
+                            <p class="precio">80000</p>
+                            <input type="checkbox" name="product" value="Tapado" class="product-checkbox" id="seleccionTapado">
+                            <section id="TallesyQTapado" class="SeleccionTalleT" name="Talles">
                                 <p>Talle único</p>
                             </section>
                         </article>
                         <article>
                             <img src="/src/img/camperas/cuero-flama.webp" alt="Campera de cuero">
                             <h4>Campera de cuero</h4>
-                            <p>$120.000</p>
-                            <input type="checkbox" name="product" value="Campera de cuero" class="product-checkbox" Id="seleccion" data-target="#TallesyQCamperadecuero">
-                            <section id="TallesyQCamperadecuero" class="SeleccionTalleCDC" name="Campera de cuero">
+                            <p class="precio">120000</p>
+                            <input type="checkbox" name="product" value="Campera de cuero" class="product-checkbox" id="seleccionCamperaDeCuero">
+                            <section id="TallesyQCamperadecuero" class="SeleccionTalleCDC" name="Talles">
                                 <p>Talle único</p>
                             </section>
                         </article>
                         <article>
                             <img src="/src/img/remeras/rojo-con-botones.webp" alt="Remera con botones">
                             <h4>Remera con botones</h4>
-                            <p>$20.000</p>
-                            <input type="checkbox" name="product" value="Remera con botones" class="product-checkbox" Id="seleccion" data-target="#TallesyQRemeraconbotones">
-                            <section id="TallesyQRemeraconbotones" class="SeleccionTalleRCB" name="Remera con botones">
+                            <p class="precio">20000</p>
+                            <input type="checkbox" name="product" value="Remera con botones" class="product-checkbox" id="seleccionRemeraConBotones">
+                            <section id="TallesyQRemeraconbotones" class="SeleccionTalleRCB" name="Talles">
                                 <p>Talle único</p>
                             </section>
                         </article>
                         <article>
                             <img src="/src/img/pantalones/calza-negra.webp" alt="Calza oxford">
                             <h4>Calza oxford</h4>
-                            <p>$32.000</p>
-                            <input type="checkbox" name="product" value="Calza oxford" class="product-checkbox" Id="seleccion" data-target="#TallesyQCalzaoxford">
-                            <section id="TallesyQCalzaoxford" class="SeleccionTalleCO" name="Calza oxford">
+                            <p class="precio">32000</p>
+                            <input type="checkbox" name="product" value="Calza oxford" class="product-checkbox" id="seleccionCalzaOxford">
+                            <section id="TallesyQCalzaoxford" class="SeleccionTalleCO" name="Talles">
                                 <p>Talle único</p>
                             </section>
                         </article>
@@ -80,15 +80,52 @@
                 </div>
             </section>
         </section>
-    <section id="datos">
-         <section id="cotizaciones">
-            <h6>Cotización de Monedas</h6>
-            <p>USD: <span id="cotizacion-USD"></span></p>
-            <p>EUR: <span id="cotizacion-EUR"></span></p>
+        <section id="datoscompra">
+            <table id="tabla-compra">
+                <tr>
+                    <th>Cantidad</th>
+                    <th>Detalle</th>
+                    <th>Moneda</th>
+                    <th>Monto</th>
+                </tr>
+                <tr>
+                    <td><span id="cantidadProductos"></span></td>
+                    <td rowspan="3"><span id="detalleProductos"></span></td>
+                    <td>ARS</td>
+                    <td><span id="costoARS"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>USD</td>
+                    <td><span id="costoUSD"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>EUR</td>
+                    <td><span id="costoEUR"></span></td>
+                </tr>
+            </table>
         </section>
-    </section>
-    <a href="/components/contacto.html" type="button" class="btn-primary" id="realizar-pedido-btn">REALIZAR PEDIDO</a>
-
+        <section id="botones-fin">
+            <!--<button type="button" class="btn-success" id="calcular-costo-btn">CALCULAR_COSTO</button>-->
+            <button type="button" onclick="realizarpedido()" class="btn-danger" id="realizar-pedido-btn">COMPRAR</button>
+        </section>
+        <section id="datos">
+            <table id="tabla-cotizaciones">
+                <tr>
+                    <th>Moneda</th>
+                    <th>Cotización</th>
+                </tr>
+                <tr>
+                    <td>USD</td>
+                    <td><span id="cotizacion-USD"></span></td>
+                </tr>
+                <tr>
+                    <td>EUR</td>
+                    <td><span id="cotizacion-EUR"></span></td>
+                </tr>
+            </table>
+        </section>
     </main>
     <footer>
         <p><img src="/src/img/icon2.png" alt=""> Codo a Codo 2024 - Todos los derechos reservados <img src="/src/img/icon2.png" alt=""></p>
@@ -97,6 +134,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="/js/jsvalue.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
-

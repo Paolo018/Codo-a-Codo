@@ -21,7 +21,7 @@ form label {
 }
 
 
-.btn-primary {
+.btn-danger {
   display: block;
   width: 100%;
   padding: 10px;
@@ -84,7 +84,7 @@ header h1 {
 }
 
 .button:hover {
-  color: black;
+  color: black; 
   background-color: #BFA181;
 }
 
@@ -99,12 +99,12 @@ nav {
 nav ul {
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 nav ul li {
   margin-right: 10px;
-  margin-bottom: 10px; /* separación vertical */
+  margin-bottom: 10px; 
 }
 
 nav ul li a {
@@ -208,6 +208,32 @@ main {
   text-align: center; 
 }
 
+
+#datoscompra {
+  width: 100%; 
+}
+#tabla-compra {
+  width: 100%; 
+  text-align: center; 
+}
+#tabla-compra th,
+#tabla-compra td {
+  padding: 8px;
+}
+#datos {
+  text-align: center; 
+  width: 100%; 
+}
+#tabla-cotizaciones {
+  width: 100%; 
+  text-align: center; 
+}
+#tabla-cotizaciones th,
+#tabla-cotizaciones td {
+  padding: 8px; 
+}
+
+
 footer {
   background-color: black;
   text-align: center;
@@ -264,7 +290,7 @@ footer img {
   transition: 0.5s;
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  width: 50px;
+  width: auto;
   height: auto;
   text-align: center;
   font-size: 70%;

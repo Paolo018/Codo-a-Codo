@@ -201,7 +201,7 @@ footer p {
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   width: 75px;
-  heigt: auto;
+  --heigt: auto;
   text-align: center;
   font-size: 95%;
 }
@@ -222,7 +222,7 @@ footer p {
   text-decoration: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   width: 50px;
-  heigt: auto;
+  --heigt: auto;
   text-align: center;
   font-size: 70%;
 }
