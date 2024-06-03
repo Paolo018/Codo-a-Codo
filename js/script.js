@@ -25,21 +25,3 @@ function validarFormulario() {
 
     return true;
     }
-
-    //Login
-
-    const $submit = document.getElementById("submit"),
-          $password = document.getElementById("password"),
-          $username = document.getElementById("username"),
-          loggedIn = false;
-
-    document.addEventListener("click", (e)=>{
-        if(e.target === $submit) {
-            if($password.value !== "" && $username.value !== ""){
-                e.preventDefault();
-                window.location.href = "../index.html";
-                loggedIn = true;
-                document.getElementById("Login").style.display = "none";
-            }
-            }
-        })

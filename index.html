@@ -17,6 +17,7 @@
         </div>
         <h1>Divina boutique</h1>
         <a id="Login" class="button" href="/components/login.html">Login</a>
+        <a id="Carrito" class="button" href="/components/carrito.html">Carrito</a>
     </header>
         <nav>
             <ul>
@@ -41,10 +42,9 @@
             <section>
                 <div class="contenedor_ofertas">
                     <article>
-                        
                         <img src="/src/img/camperas/tapado.webp" alt="">
                         <h4>Tapado</h4>
-                        <p>$80.000</p>
+                        <p class="precio">80000</p>
                         <div class="form-group">
                             <label>Talle</label>
                             <select name="size">
@@ -54,15 +54,16 @@
                             <option value="L">L</option>
                             <option value="XL">XL</option>
                         </select>
-                        <label>Cantidad:</label>
-                                <input type="number" name="quantity-Tapado" min="1" max="10">
-                                <button class="btn-clean" type="reset">Limpiar</button>
+                        <hr>
+                        <br>
+                        <label>Agregar</label>
+                                <input type="checkbox" name="product" value="Tapado" class="product-checkbox" id="seleccionTapado">
                         </div>
                     </article>
                     <article>
                         <img src="/src/img/camperas/cuero-flama.webp" alt="">
                         <h4>Campera de cuero</h4>
-                        <p>$120.000</p>
+                        <p class="precio">120000</p>
                         <div class="form-group">
                             <label>Talle</label>
                             <select name="size">
@@ -72,15 +73,16 @@
                             <option value="L">L</option>
                             <option value="XL">XL</option>
                         </select>
-                        <label>Cantidad:</label>
-                                <input type="number" name="quantity-Tapado" min="1" max="10">
-                                <button class="btn-clean" type="reset">Limpiar</button>
+                        <hr>
+                        <br>
+                        <label>Agregar</label>
+                                <input type="checkbox" name="product" value="CamperaFlama" class="product-checkbox" id="seleccionCamperaDeCuero">
                         </div>
                     </article>
                     <article>
                         <img src="/src/img/remeras/rojo-con-botones.webp" alt="">
                         <h4>Remera con botones</h4>
-                        <p>$20.000</p>
+                        <p class="precio">20000</p>
                         <div class="form-group">
                             <label>Talle</label>
                             <select name="size">
@@ -90,15 +92,16 @@
                             <option value="L">L</option>
                             <option value="XL">XL</option>
                         </select>
-                        <label>Cantidad:</label>
-                                <input type="number" name="quantity-Tapado" min="1" max="10">
-                                <button class="btn-clean" type="reset">Limpiar</button>
+                        <hr>
+                        <br>
+                        <label>Agregar</label>
+                                <input type="checkbox" name="product" value="Remera-con-botones" class="product-checkbox" id="seleccionRemeraConBotones">
                         </div>
                     </article>
                     <article>
                         <img src="/src/img/pantalones/calza-negra.webp" alt="">
                         <h4>Calza oxford</h4>
-                        <p>$32.000</p>
+                        <p class="precio">32000</p>
                         <div class="form-group">
                             <label>Talle</label>
                             <select name="size">
@@ -108,18 +111,67 @@
                             <option value="L">L</option>
                             <option value="XL">XL</option>
                         </select>
-                        <label>Cantidad:</label>
-                                <input type="number" name="quantity-Tapado" min="1" max="10">
-                                <button class="btn-clean" id="Limpiar" type="reset">Limpiar</button>
+                        <hr>
+                        <br>
+                        <label>Agregar</label>
+                                <input type="checkbox" name="product" value="Calza-oxford" class="product-checkbox" id="seleccionCalzaOxford">
                         </div>
                     </article>
                 </div>
             </section>
+        </section>
+          <section id="datoscompra">
+            <table id="tabla-compra">
+                <tr>
+                    <th>Cantidad</th>
+                    <th>Detalle</th>
+                    <th>Moneda</th>
+                    <th>Monto</th>
+                </tr>
+                <tr>
+                    <td><span id="cantidadProductos"></span></td>
+                    <td rowspan="3"><span id="detalleProductos"></span></td>
+                    <td>ARS</td>
+                    <td><span id="costoARS"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>USD</td>
+                    <td><span id="costoUSD"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>EUR</td>
+                    <td><span id="costoEUR"></span></td>
+                </tr>
+            </table>
+        </section>
+        <section id="botones-fin">
+            <!--<button type="button" class="btn-success" id="calcular-costo-btn">CALCULAR_COSTO</button>-->
+            <button class="button" type="button" onclick="realizarpedido()" class="btn-danger" id="realizar-pedido-btn">COMPRAR</button>
+        </section>
+        <section id="datos">
+            <table id="tabla-cotizaciones">
+                <tr>
+                    <th>Moneda</th>
+                    <th>Cotización</th>
+                </tr>
+                <tr>
+                    <td>USD</td>
+                    <td><span id="cotizacion-USD"></span></td>
+                </tr>
+                <tr>
+                    <td>EUR</td>
+                    <td><span id="cotizacion-EUR"></span></td>
+                </tr>
+            </table>
         </section>
     </main>
     <footer>
         <p>Codo a Codo 2024 - Todos los derechos reservados</p>
     </footer>
     <script src="/js/script.js"></script>
+    <script src="/js/jsvalue.js"></script>
+    <script src="/js/loggedIn.js"></script>
 </body>
 </html>

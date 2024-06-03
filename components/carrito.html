@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divina boutique</title>
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="icon" href="../src/img/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/src/img/icon2.png" alt="">
+        </div>
+        <h1>Divina boutique</h1>
+        <a id="Login" class="button" href="/components/login.html">Login</a>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="button">Ofertas</a></li>
+                <li>
+                    <div class="menu">
+                        <a href="#" class="button">Categorías</a>
+                            <ul>
+                                <li><a href="/components/camperas.html">Camperas</a></li>
+                                <li><a href="/components/remeras.html">Remeras</a></li>
+                                <li><a href="/components/pantalones.html">Pantalones</a></li>
+                            </ul>
+                    </div>
+                </li>
+                <li><a href="/components/nosotros.html" class="button">Nosotros</a></li>
+                <li><a href="/components/contacto.html" class="button">Contacto</a></li>
+            </ul>
+        </nav>
+    <section id="Contacto">
+        <h2 class="titulo">Carrito</h2>
+        <form id="formulario" onsubmit="return validarFormulario()">
+
+            <label for="Asunto">Asunto</label>
+            <select class="form-select" aria-label="Default select example" id="Asunto" name="Asunto">
+                <option value="2">Compra online</option>
+            </select>
+            
+            <label for="Name">Nombre</label>
+            <input id="Name" name="Name" type="text" required>
+        
+            <label for="Apellido">Apellido</label>
+            <input id="Apellido" name="Apellido" type="text" required>
+        
+            <label for="Email">Email</label>
+            <input id="Email" name="Email" type="email" required>
+        
+            <label for="Message">Articulos</label>
+            <textarea name="Message" id="Message" cols="30" rows="10" required></textarea>
+        
+            <input class="button" type="reset">
+            <input class="button" type="submit">
+        </form>
+    </section>
+    <footer>
+        <p>Codo a Codo 2024 - Todos los derechos reservados</p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="../js/autocompletar.js"></script>
+</body>
+</html>
