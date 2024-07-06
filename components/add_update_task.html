@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divina boutique</title>
+    <link rel="stylesheet" href="/css/camperas.css">
+    <link rel="stylesheet" href="/css/add_update_task.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../src/img/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/src/img/icon2.png" alt="">
+        </div>
+        <h1>Divina boutique</h1>
+        <a id="Login" class="button" href="/components/login.html">Login</a>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="button">Ofertas</a></li>
+                <li>
+                    <div class="menu">
+                        <a href="#" class="button">Categorías</a>
+                            <ul>
+                                <li><a href="/components/camperas.html">Camperas</a></li>
+                                <li><a href="/components/remeras.html">Remeras</a></li>
+                                <li><a href="/components/pantalones.html">Pantalones</a></li>
+                            </ul>
+                    </div>
+                </li>
+                <li><a href="/components/nosotros.html" class="button">Nosotros</a></li>
+                <li><a href="/components/contacto.html" class="button">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2 id="TareasPendientes"><span class="titulo">Agregar nueva tarea</span><br>
+                <a href="../components/camperas.html#TareasPendientes">Cancelar</a>
+            </h2>
+            <section class="tareas">
+                <div class="tareas-container">
+                    <article class="tarea pendiente chanfle">
+                        <form id="formulario" method="POST">
+                            <input type="text" id="Titulo" name="Titulo" placeholder="Título" required>
+                            <hr>
+                            <textarea name="descripcion" id="Descripcion" class="descripcion" placeholder="Descripción" required></textarea>
+                            <div class="acciones">
+                                <a href="../index.html#TareasPendientes" id="Cancelar" title="Cancelar"><i class='bx bxs-message-square-x' ></i></a>
+                                <button type="button" id="Crear" title="Crear"><i class='bx bxs-message-square-check'></i></button>
+                            </div>
+                            <span class="fecha" title="Fecha de creación"></span>
+                            <input id="task_id" type="hidden" name="task_id">
+                        </form>
+                    </article>
+                </div>
+            </section>
+        </main>
+    <footer>
+        <p>Codo a Codo 2024 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
