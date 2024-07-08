@@ -36,7 +36,8 @@ def create_table_tareas():
             descripcion VARCHAR(300) NOT NULL,
             fecha_creacion DATE NOT NULL,
             completada BOOLEAN NOT NULL,
-            activa BOOLEAN NOT NULL
+            activa BOOLEAN NOT NULL,
+            imagen TEXT NOT NULL
         );
         """
     )

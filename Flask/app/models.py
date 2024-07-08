@@ -2,13 +2,14 @@ from app.database import get_db
 
 
 class Task:
-    def __init__(self, id_task=None, nombre=None, descripcion=None, fecha_creacion=None, completada=None, activa=None):
+    def __init__(self, id_task=None, nombre=None, descripcion=None, fecha_creacion=None, completada=None, activa=None, imagen=None):
         self.id_task = id_task
         self.nombre = nombre
         self.descripcion = descripcion
         self.fecha_creacion = fecha_creacion
         self.completada = completada
         self.activa = activa
+        self.imagen = imagen
 
     @staticmethod
     def __get_tasks_by_query(query):
@@ -26,7 +27,8 @@ class Task:
                     descripcion=row[2],
                     fecha_creacion=row[3],
                     completada=row[4],
-                    activa=row[5]
+                    activa=row[5],
+                    imagen=row[6]
                 )
             )
         cursor.close()
@@ -69,7 +71,8 @@ class Task:
                 descripcion=row[2],
                 fecha_creacion=row[3],
                 completada=row[4],
-                activa=row[5]
+                activa=row[5],
+                imagen=row[6]
             )
         return None
 
@@ -80,19 +83,19 @@ class Task:
             cursor.execute(
                 """
                     UPDATE tareas
-                    SET nombre = %s, descripcion = %s, completada = %s, activa = %s
+                    SET nombre = %s, descripcion = %s, completada = %s, activa = %s, imagen = %s
                     WHERE id = %s
                 """,
-                (self.nombre, self.descripcion, self.completada, self.activa, self.id_task))
+                (self.nombre, self.descripcion, self.completada, self.activa, self.id_task, self.imagen))
 
         else: # Crear Tarea nueva
             cursor.execute(
                 """
                     INSERT INTO tareas
-                    (nombre, descripcion, fecha_creacion, completada, activa)
-                    VALUES (%s, %s, %s, %s, %s)
+                    (nombre, descripcion, fecha_creacion, completada, activa, imagen)
+                    VALUES (%s, %s, %s, %s, %s, %s)
                 """,
-                (self.nombre, self.descripcion, self.fecha_creacion, self.completada, self.activa))
+                (self.nombre, self.descripcion, self.fecha_creacion, self.completada, self.activa, self.imagen))
             self.id_task = cursor.lastrowid
         db.commit()
         cursor.close()
@@ -111,5 +114,6 @@ class Task:
             'descripcion': self.descripcion,
             'fecha_creacion': self.fecha_creacion.strftime('%Y-%m-%d'),
             'completada': self.completada,
-            'activa': self.activa
+            'activa': self.activa,
+            'imagen': self.imagen
         }

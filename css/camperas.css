@@ -1,422 +1,483 @@
 * {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  header,
-  main,
-  footer,
-  nav {
-    padding: 25px;
-  }
-  
-  body {
-    background-color: ivory;
-  }
-  
-  header {
-    background-color: ivory;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header h1 {
-    color: #BFA181;
-  }
-  
-  .contenedor_ofertas img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .button {
-    background-color: rgb(248, 248, 212);
-    padding: 15px;
-    color: #BFA181;
-    border-radius: 5px;
-    transition: 0.5s;
-    text-decoration: none;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .button:hover {
-    color: black; 
-    background-color: #BFA181;
-  }
-  
-  nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    position: sticky;
-    top: 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-  }
-  
-  nav ul li a {
-    display: inline-block;
-    padding: 10px;
-    margin-right: 10px;
-  }
-  
-    .menu {
-    position: relative;
-  }
-  
-    .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-  }
-  
-    .menu li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-    .menu a {
-    text-decoration: none;
-    color: #BFA181;
-  }
-  
-    .menu:hover ul {
-    display: block;
-  }
-  
-  :root {
-    --main: #5900FF;
-    --main-midtone: #885bdc;
-    --main-light: #EFE7FF;
-    --secondary: #FFEFBD;
-    --secondary-light: #FFF8E4;
-    --dark: #242424;
-    --dark-light: #2F2F2F;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
 
-    --completed: #a3ffa0;
-    --archived: #ffa0a0;
+html {
+  scroll-behavior: smooth;
+}
 
-    --main-padding: 50px;
-    --secondary-padding: 25px;
-    --terciary-padding: 15px;
-    --min-padding: 10px;
+header,
+main,
+footer,
+nav {
+  padding: 25px;
+}
+
+body {
+  background-color: ivory;
+}
+
+header {
+  background-color: ivory;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #BFA181;
+}
+
+.contenedor_ofertas img {
+  width: 100px;
+  height: 100px;
+}
+
+.button {
+  background-color: rgb(248, 248, 212);
+  padding: 15px;
+  color: #BFA181;
+  border-radius: 5px;
+  transition: 0.5s;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  color: black; 
+  background-color: #BFA181;
+}
+
+nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+  .menu {
+  position: relative;
+}
+
+  .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+  .menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+  .menu a {
+  text-decoration: none;
+  color: #BFA181;
+}
+
+  .menu:hover ul {
+  display: block;
 }
 
 main {
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-
-    h2 {
-        color: var(--main-light);
-        font-weight: 200;
-    }
- 
-    .headerActionButton {
-        color: var(--main-light);
-        border: none;
-        
-        background-color: transparent;
-        
-        font-family: 'Roboto';
-        font-weight: 200;
-        font-size: 0.75em;
-
-        transition: all 0.2s;
-    }
-
-    .headerActionButton.active {
-        color: var(--secondary);
-        text-decoration: underline;
-    }
-
-    .headerActionButton:hover {
-        color: var(--main);
-        cursor: pointer;
-    }
-
-    .tareas {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        flex: 1;
-        gap: var(--main-padding);
-
-        padding: var(--terciary-padding);
-
-        .tareas-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: var(--main-padding);
-        }
-
-        .tarea {
-            position: relative;
-
-            display: flex;
-            flex-direction: column;
-
-            justify-content: flex-start;
-
-            width: 300px;
-            height: 400px;
-
-            padding: var(--secondary-padding);
-
-            transition: all 0.1s;
-
-            @media only screen and (max-width: 600px) {
-                width: 200px;
-                height: 300px;
-    
-                padding: var(--min-padding);
-    
-                font-size: 0.75em;
-            }
-
-            h3 {
-                padding: var(--min-padding);
-
-                .detalle {
-                    color: gray;
-                    font-size: 0.75em;
-                }
-            }
-
-            hr {
-                width: 100%;
-                margin: 5px;
-            }
-
-            .descripcion {
-                padding: var(--min-padding);
-                line-height: 1.5em;
-
-                flex: 6;
-
-                width: 100%;
-            }
-
-            .acciones {
-                flex: 1;
-
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                align-items: center;
-
-                width: 100%;
-                opacity: 0;
-
-                font-size: 2em;
-                
-                @media only screen and (max-width: 600px) {
-                    font-size: 1.7em;
-                }
-
-                transition: all 0.1s;
-
-                button {
-                    margin: 0 5px;
-                    color: var(--dark);
-                    transition: all 0.2s;
-                    
-                    border: none;
-                    background-color: transparent;
-                    font-size: 1em;
-                }
-
-                button:hover {
-                    cursor: pointer;
-                }
-
-                #Crear:hover,
-                #Completar:hover,
-                #Pendiente:hover {
-                    color: var(--main);
-                }
-
-                #Crear:hover {
-                    cursor: pointer;
-                }
-
-                #Editar:hover {
-                    color: var(--main-midtone);
-                }
-
-                #Archivar:hover,
-                #Cancelar:hover {
-                    color: red;
-                }
-            }
-
-            .fecha {
-                position: absolute;
-                bottom:0;
-                right: 0;
-                padding: var(--min-padding);
-
-                font-weight: 400;
-                font-size: 0.8em;
-
-                @media only screen and (max-width: 600px) {
-                    font-size: 0.6em;
-                }
-            }
-        }
-
-        .tarea.pendiente {
-            background-color: var(--secondary);
-        }
-
-        .tarea.completada {
-            background-color: var(--completed);
-        }
-
-        .tarea.archivada {
-            background-color: var(--archived);
-        }
-
-        .tarea:hover .acciones {
-            opacity: 100;
-        }
-
-        .tarea.agregar {
-            width: unset;
-            height: unset;
-            position: sticky;
-            padding: 0;
-            bottom: 0;
-            right: var(--secondary-padding);
-            z-index: 100;
-
-            background-color: transparent;
-            transition: all 0.2s;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .accion {
-                color: var(--main-light);
-                font-size: 4em;
-
-                transition: all 0.2s;
-            }
-
-            .accion:hover {
-                color: var(--main);
-            }
-        }
-    }
+  padding: 0;
 }
 
+#Destacados {
+  min-height: 50vh;
+}
+
+.titulo {
+  background-color: rgb(248, 248, 212);
+  padding: 15px;
+  padding-left: 25px;
+  font-size: 18px;
+  color: #BFA181;
+}
+
+#Destacados .contenedor_ofertas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#Destacados .contenedor_ofertas article {
+  width: 20%;
+  margin: 25px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.contenedor_ofertas article h4 {
+  flex: 1;
+  padding-top: 10px;
+}
+
+.contenedor_ofertas article img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.contenedor_ofertas article p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.form-group {
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  width: 100%;
+  color: #222;
+  font-weight: 500;
+}
+
+.form-group select {
+  width: 240px;
+  border: none;
+  padding: 12px 10px;
+  background-color: #f7f7f7;
+  margin: 10px;
+  outline: none;
+  color: #666;
+}
+
+.btn-clean {
+  border: none;
+  background: none;
+  color: #666;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.btn-clean:hover {
+  color: #BFA181;
+}
 
 footer {
-    position: fixed;
-    bottom: 0;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-
-    @media only screen and (max-width: 600px) {
-        font-size: 0.5em;
-    }
-
-    .firma {
-        font-weight: 300;
-        color:  var(--main-light);
-    }
-
-    .sociales {
-        list-style-type: none;
-        display: flex;
-
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-
-        @media only screen and (max-width: 600px) {
-            font-size: 1.3em;
-        }
-
-        a {
-            font-size: 2em;
-            color: var(--main-light);
-
-            transition: all 0.1s;
-        }
-
-        a:hover {
-            color: var(--main);
-        }
-    }
+  background-color: black;
+  text-align: center;
+  padding: 2%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-footer.animated {
-    animation: scroll-color-change linear;
-    animation-timeline: scroll();
+footer p {
+  color: #BFA181
+}
 
-    .firma {
-        color: unset;
-    }
+@media screen and (max-width: 800px) {
+  #Destacados .contenedor_ofertas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor_ofertas article img {
+    width: 300px;
+    height: auto;
+  }
+  .titulo, footer {
+    width: 100vh;
+  }
+}
 
-    a {
-        animation: scroll-color-change linear;
-        animation-timeline: scroll();
-    }
-    a:hover {
-        animation: scroll-color-change-inverse linear;
-        animation-timeline: scroll();
-    }
+@media screen and (max-width: 320px) {
+  #Destacados .contenedor_ofertas {
+    flex-direction: column;
+}
+.contenedor_ofertas article img {
+  width: 250px;
+  height: auto;
+}
+.titulo, footer {
+  width: 100vh;
+}
+}
+
+:root {
+  --main: #5900FF;
+  --main-midtone: #885bdc;
+  --main-light: #EFE7FF;
+  --secondary: #FFEFBD;
+  --secondary-light: #FFF8E4;
+  --dark: #242424;
+  --dark-light: #2F2F2F;
+
+  --completed: #a3ffa0;
+  --archived: #ffa0a0;
+
+  --main-padding: 50px;
+  --secondary-padding: 25px;
+  --terciary-padding: 15px;
+  --min-padding: 10px;
+}
+
+main {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  h2 {
+      color: var(--main-light);
+      font-weight: 200;
+  }
+
+  .headerActionButton {
+      color: var(--main-light);
+      border: none;
+      
+      background-color: transparent;
+      
+      font-family: 'Roboto';
+      font-weight: 200;
+      font-size: 0.75em;
+
+      transition: all 0.2s;
+  }
+
+  .headerActionButton.active {
+      color: var(--secondary);
+      text-decoration: underline;
+  }
+
+  .headerActionButton:hover {
+      color: var(--main);
+      cursor: pointer;
+  }
+
+  .tareas {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex: 1;
+      gap: var(--main-padding);
+
+      padding: var(--terciary-padding);
+
+      .tareas-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: var(--main-padding);
+      }
+
+      .tarea {
+          position: relative;
+
+          display: flex;
+          flex-direction: column;
+
+          justify-content: flex-start;
+
+          width: 300px;
+          height: 400px;
+
+          padding: var(--secondary-padding);
+
+          transition: all 0.1s;
+
+          @media only screen and (max-width: 600px) {
+              width: 200px;
+              height: 300px;
+  
+              padding: var(--min-padding);
+  
+              font-size: 0.75em;
+          }
+
+          h3 {
+              padding: var(--min-padding);
+
+              .detalle {
+                  color: gray;
+                  font-size: 0.75em;
+              }
+          }
+
+          hr {
+              width: 100%;
+              margin: 5px;
+          }
+
+          .descripcion {
+              padding: var(--min-padding);
+              line-height: 1.5em;
+
+              flex: 6;
+
+              width: 100%;
+          }
+
+          .acciones {
+              flex: 1;
+
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-end;
+              align-items: center;
+
+              width: 100%;
+              opacity: 0;
+
+              font-size: 2em;
+              
+              @media only screen and (max-width: 600px) {
+                  font-size: 1.7em;
+              }
+
+              transition: all 0.1s;
+
+              button {
+                  margin: 0 5px;
+                  color: var(--dark);
+                  transition: all 0.2s;
+                  
+                  border: none;
+                  background-color: transparent;
+                  font-size: 1em;
+              }
+
+              button:hover {
+                  cursor: pointer;
+              }
+
+              #Crear:hover,
+              #Completar:hover,
+              #Pendiente:hover {
+                  color: var(--main);
+              }
+
+              #Crear:hover {
+                  cursor: pointer;
+              }
+
+              #Editar:hover {
+                  color: var(--main-midtone);
+              }
+
+              #Archivar:hover,
+              #Cancelar:hover {
+                  color: red;
+              }
+          }
+
+          .fecha {
+              position: absolute;
+              bottom:0;
+              right: 0;
+              padding: var(--min-padding);
+
+              font-weight: 400;
+              font-size: 0.8em;
+
+              @media only screen and (max-width: 600px) {
+                  font-size: 0.6em;
+              }
+          }
+      }
+
+      .tarea.pendiente {
+          background-color: var(--secondary);
+      }
+
+      .tarea.completada {
+          background-color: var(--completed);
+      }
+
+      .tarea.archivada {
+          background-color: var(--archived);
+      }
+
+      .tarea:hover .acciones {
+          opacity: 100;
+      }
+
+      .tarea.agregar {
+          width: unset;
+          height: unset;
+          position: sticky;
+          padding: 0;
+          bottom: 0;
+          right: var(--secondary-padding);
+          z-index: 100;
+
+          background-color: transparent;
+          transition: all 0.2s;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .accion {
+              color: var(--main-light);
+              font-size: 4em;
+
+              transition: all 0.2s;
+          }
+
+          .accion:hover {
+              color: var(--main);
+          }
+      }
+  }
 }
 
 @keyframes scroll-color-change {
-    from {
-        color: var(--dark);
-    }
-    to {
-        color: var(--main-light);
-    }
+  from {
+      color: var(--dark);
+  }
+  to {
+      color: var(--main-light);
+  }
 }
 
 @keyframes scroll-color-change-inverse {
-    from {
-        color: var(--main);
-    }
+  from {
+      color: var(--main);
+  }
 }
 
 .chanfle {
-    /*Una forma de obtener esquinas a 45 grados*/
-    /* https://css-generators.com/custom-corners/ */
-    clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
-    overflow: hidden;
-    z-index: 1;
+  /*Una forma de obtener esquinas a 45 grados*/
+  /* https://css-generators.com/custom-corners/ */
+  clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
+  overflow: hidden;
+  z-index: 1;
 }
