@@ -34,8 +34,7 @@ def create_task():
         descripcion=data['descripcion'],
         fecha_creacion=date.today().strftime('%Y-%m-%d'),
         completada=False,
-        activa=True,
-        imagen=data['imagen']
+        activa=True
     )
     new_task.save()
     return jsonify({'message': 'Task created successfully'}), 201
@@ -48,7 +47,6 @@ def update_task(task_id):
     data = request.json
     task.nombre = data['nombre']
     task.descripcion = data['descripcion']
-    task.imagen = data['imagen']
     task.save()
     return jsonify({'message': 'Task updated successfully'})
 

@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divina boutique</title>
     <link rel="stylesheet" href="/css/camperas.css">
-    <link rel="stylesheet" href="/css/add_update_task.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="../src/img/icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,80 +33,168 @@
                 </li>
                 <li><a href="/components/nosotros.html" class="button">Nosotros</a></li>
                 <li><a href="/components/contacto.html" class="button">Contacto</a></li>
+                <li><a href="/components/stock.html" class="button">Stock</a></li>
             </ul>
         </nav>
-        <main>
-            <section id="Destacados">
-                <h2 class="titulo">Camperas</h2>
-                <section>
-            <h2 id="TareasPendientes">
-                Mis Tareas<br> 
-                <button type="menu" id="VerPendientes" class="headerActionButton active" title="Ver todas las tareas pendientes">Pendientes</button>
-                <button type="menu" id="VerCompletadas" class="headerActionButton" title="Ver todas las tareas Completadas">Completadas</button>
-                <button type="menu" id="VerArchivadas" class="headerActionButton" title="Ver todas las tareas Archivadas">Archivadas</button>
-            </h2>
-            <section class="tareas">
-                <div class="tareas-container">
-                    <article class="tarea chanfle pendiente template">
-                        <h3>
-                            <span class="titulo-ropa">Tarea 1</span>
-                        </h3>
-                        <hr>
-                        <p class="precio">
-                            Precio
-                        </p>
-                        <div class="acciones">
-                            <button id="Archivar" title="Archivar"><i class='bx bxs-message-square-x' ></i></button>
-                            <button id="Editar" title="Editar"><i class='bx bxs-message-square-edit' ></i></button>
-                            <button id="Completar" title="Completar"><i class='bx bxs-message-square-check'></i></button>
+    <main>
+        <section id="Destacados">
+            <h2 class="titulo">Camperas</h2>
+            <section>
+                <div class="contenedor_ofertas">
+                    <article>
+                        <img src="/src/img/camperas/blazer.webp" alt="">
+                        <h4>Blazer</h4>
+                        <p>$76.000</p>
+                        <div class="form-group">
+                            <label>Talle</label>
+                            <select name="size">
+                            <option disabled selected value="">Seleccione una opción</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label>Cantidad:</label>
+                                <input type="number" name="quantity-Tapado" min="1" max="10">
+                                <button class="btn-clean" type="reset">Limpiar</button>
                         </div>
-                        <span class="fecha" title="Fecha de creación">19/12/24</span>
-                        <input type="hidden" name="task_id" class="task_id">
                     </article>
-                    <article class="tarea chanfle completada template">
-                        <h3>
-                            <span class="titulo-ropa">Tarea 2</span>
-                            <span class="detalle">(Completada)</span>
-                            <span class="imagen">(Imagen)</span>
-                        </h3>
-                        <hr>
-                        <p class="precio">
-                            Precio
-                        </p>
-                        <div class="acciones">
-                            <button id="Archivar" title="Archivar"><i class='bx bxs-message-square-x' ></i></button>
-                            <button id="Pendiente" title="Marcar como pendiente"><i class='bx bxs-door-open'></i></button>
+                    <article>
+                        <img src="/src/img/camperas/cuero-flama.webp" alt="">
+                        <h4>Campera de cuero</h4>
+                        <p>$120.000</p>
+                        <div class="form-group">
+                            <label>Talle</label>
+                            <select name="size">
+                            <option disabled selected value="">Seleccione una opción</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label>Cantidad:</label>
+                                <input type="number" name="quantity-Tapado" min="1" max="10">
+                                <button class="btn-clean" type="reset">Limpiar</button>
                         </div>
-                        <span class="fecha" title="Fecha de creación">19/12/24</span>
-                        <input type="hidden" name="task_id" class="task_id">
                     </article>
-                    <article class="tarea chanfle archivada template">
-                        <h3>
-                            <span class="titulo-ropa">Tarea 2</span>
-                            <span class="detalle">(Archivada)</span>
-                        </h3>
-                        <hr>
-                        <p class="precio">
-                            Precio
-                        </p>
-                        <div class="acciones">
-                            <button id="Pendiente" title="Marcar como pendiente"><i class='bx bxs-door-open'></i></button>
+                    <article>
+                        <img src="/src/img/camperas/campera-jean.webp" alt="">
+                        <h4>Campera de jean</h4>
+                        <p>$80.000</p>
+                        <div class="form-group">
+                            <label>Talle</label>
+                            <select name="size">
+                            <option disabled selected value="">Seleccione una opción</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label>Cantidad:</label>
+                                <input type="number" name="quantity-Tapado" min="1" max="10">
+                                <button class="btn-clean" type="reset">Limpiar</button>
                         </div>
-                        <span class="fecha" title="Fecha de creación">19/12/24</span>
-                        <input type="hidden" name="task_id" class="task_id">
+                    </article>
+                    <article>
+                        <img src="/src/img/camperas/tapado.webp" alt="">
+                        <h4>Tapado</h4>
+                        <p>$80.000</p>
+                        <div class="form-group">
+                            <label>Talle</label>
+                            <select name="size">
+                            <option disabled selected value="">Seleccione una opción</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label>Cantidad:</label>
+                                <input type="number" name="quantity-Tapado" min="1" max="10">
+                                <button class="btn-clean" type="reset">Limpiar</button>
+                        </div>
                     </article>
                 </div>
-                <article class="tarea agregar">
-                    <a href="../components/add_update_task.html" class="accion">
-                        <i class='bx bxs-message-square-add'></i>
-                    </a>
-                </article>
             </section>
-        </main>
+            <section>
+                <div class="contenedor_ofertas">
+                    <article>
+                        <img src="/src/img/camperas/aoki.webp" alt="">
+                        <h4>Aoki</h4>
+                        <p>$99.990</p>
+                        <div class="form-group">
+                            <label>Talle</label>
+                            <select name="size">
+                            <option disabled selected value="">Seleccione una opción</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label>Cantidad:</label>
+                                <input type="number" name="quantity-Tapado" min="1" max="10">
+                                <button class="btn-clean" type="reset">Limpiar</button>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="/src/img/camperas/campera-charlotte.webp" alt="">
+                        <h4>Charlotte</h4>
+                        <p>$92.000</p>
+                        <div class="form-group">
+                            <label>Talle</label>
+                            <select name="size">
+                            <option disabled selected value="">Seleccione una opción</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label>Cantidad:</label>
+                                <input type="number" name="quantity-Tapado" min="1" max="10">
+                                <button class="btn-clean" type="reset">Limpiar</button>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="/src/img/camperas/chaqueta.webp" alt="">
+                        <h4>Chaqueta Mamba Print</h4>
+                        <p>$105.000</p>
+                        <div class="form-group">
+                            <label>Talle</label>
+                            <select name="size">
+                            <option disabled selected value="">Seleccione una opción</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label>Cantidad:</label>
+                                <input type="number" name="quantity-Tapado" min="1" max="10">
+                                <button class="btn-clean" type="reset">Limpiar</button>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="/src/img/camperas/campera-negra.webp" alt="">
+                        <h4>Campera puffer</h4>
+                        <p>$89.990</p>
+                        <div class="form-group">
+                            <label>Talle</label>
+                            <select name="size">
+                            <option disabled selected value="">Seleccione una opción</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <label>Cantidad:</label>
+                                <input type="number" name="quantity-Tapado" min="1" max="10">
+                                <button class="btn-clean" type="reset">Limpiar</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </section>
+    </main>
     <footer>
         <p>Codo a Codo 2024 - Todos los derechos reservados</p>
     </footer>
-    <script src="/js/index.js"></script>
-    <script src="/js/fetchData.js"></script>
 </body>
 </html>

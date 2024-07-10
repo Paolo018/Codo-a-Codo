@@ -8,8 +8,7 @@ let task_id = params.get("task_id");
 function add_new_task(event) {
     let data = {
         'nombre': document.querySelector("#Formulario #Titulo").value,
-        'descripcion': document.querySelector("#Formulario #Descripcion").value,
-        'imagen': document.querySelector("#Formulario #Imagen").value
+        'descripcion': document.querySelector("#Formulario #Descripcion").value
     }
 
     let url = BASE_URL + '/api/tasks/create/';
@@ -24,15 +23,14 @@ function add_new_task(event) {
 function update_task(event) {
     let data = {
         'nombre': document.querySelector("#Formulario #Titulo").value,
-        'descripcion': document.querySelector("#Formulario #Descripcion").value,
-        'imagen': document.querySelector("#Formulario #Imagen").value
+        'descripcion': document.querySelector("#Formulario #Descripcion").value
     }
 
     let url = BASE_URL + '/api/tasks/update/' + task_id;
 
     fetchData(url, "PUT", () => {
         document.querySelector("#Formulario").reset();
-        window.location.replace("../components/camperas.html#TareasPendientes");
+        window.location.replace("../components/stock.html#TareasPendientes");
     }, 
     data);
 }
@@ -56,8 +54,7 @@ function add_or_update(){
             document.querySelector("#Titulo").value = data.nombre;
             document.querySelector("#Descripcion").value = data.descripcion;
             document.querySelector("#task_id").value = data.id;
-            document.querySelector(".fecha").innerHTML = data.fecha_creacion;
-            document.querySelector("#Imagen").value = data.imagen;
+            document.querySelector(".fecha").innerHTML = data.fecha_creacion
 
             set_form_readOnly(false);
         });

@@ -94,10 +94,9 @@ function loadTasks(task_status) {
         for (const task of data) {
             let newTask = taskTemplates[fetch_data[task_status].TaskTemplatesName].cloneNode(true);
             newTask.querySelector("h3 .titulo-ropa").innerHTML = task.nombre;
-            newTask.querySelector(".precio").innerHTML = task.descripcion;
+            newTask.querySelector(".stock").innerHTML = task.descripcion;
             newTask.querySelector(".fecha").innerHTML = task.fecha_creacion;
-            newTask.querySelector(".task_id").value = task.id;
-            newTask.querySelector(".imagen").innerHTML = task.imagen;
+            newTask.querySelector(".task_id").value = task.id
 
             let archivarAction = newTask.querySelector("#Archivar");
             let editarAction =newTask.querySelector("#Editar");

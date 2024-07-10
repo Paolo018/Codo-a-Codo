@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divina boutique</title>
+    <link rel="stylesheet" href="/css/camperas.css">
+    <link rel="stylesheet" href="/css/add_update_task.css">
+    <script src="https://kit.fontawesome.com/3875674ddf.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../src/img/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/src/img/icon2.png" alt="">
+        </div>
+        <h1>Divina boutique</h1>
+        <a id="Login" href="/components/login.html"><i class='bx bxs-user-check'></i></a>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="button">Ofertas</a></li>
+                <li>
+                    <div class="menu">
+                        <a href="#" class="button">Categorías</a>
+                            <ul>
+                                <li><a href="/components/camperas.html">Camperas</a></li>
+                                <li><a href="/components/remeras.html">Remeras</a></li>
+                                <li><a href="/components/pantalones.html">Pantalones</a></li>
+                            </ul>
+                    </div>
+                </li>
+                <li><a href="/components/nosotros.html" class="button">Nosotros</a></li>
+                <li><a href="/components/contacto.html" class="button">Contacto</a></li>
+                <li><a href="/components/stock.html" class="button">Stock</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="Destacados">
+                <h2 class="titulo">Stock</h2>
+                <section>
+            <h2 id="TareasPendientes">
+                Cantidad de stock.<br> 
+                <button class="boton-tareas" type="menu" id="VerPendientes" class="headerActionButton active" title="Ver todo el stock de camperas">Camperas</button>
+                <button class="boton-tareas" type="menu" id="VerCompletadas" class="headerActionButton" title="Ver todo el stock de remeras">Remeras</button>
+                <button class="boton-tareas" type="menu" id="VerArchivadas" class="headerActionButton" title="Ver todo el stock de pantalones">Pantalones</button>
+            </h2>
+            <section class="tareas">
+                <div class="tareas-container">
+                    <article class="tarea chanfle pendiente template">
+                        <h3>
+                            <span class="titulo-ropa">Prenda</span>
+                        </h3>
+                        <hr>
+                        <p class="stock">
+                            Cantidad de stock
+                        </p>
+                        <div class="acciones">
+                            <button id="Completar" title="Remeras"><i class='bx bxs-t-shirt'></i></button>
+                            <button id="Editar" title="Editar"><i class="fa-solid fa-pen"></i></button>
+                            <button id="Archivar" title="Pantalones"><i class="fa-solid fa-socks"></i></button>
+                        </div>
+                        <span class="fecha" title="Fecha de actualizacion">19/12/24</span>
+                        <input type="hidden" name="task_id" class="task_id">
+                    </article>
+                    <article class="tarea chanfle completada template">
+                        <h3>
+                            <span class="titulo-ropa">Prenda</span>
+
+                        </h3>
+                        <hr>
+                        <p class="stock">
+                            Cantidad de stock
+                        </p>
+                        <div class="acciones">
+                            <button id="Pendiente" title="Camperas"><i class="fa-solid fa-vest"></i></button>
+                            <button id="Editar" title="Editar"><i class="fa-solid fa-pen"></i></button>
+                            <button id="Archivar" title="Pantalones"><i class="fa-solid fa-socks"></i></button>
+                        </div>
+                        <span class="fecha" title="Fecha de actualizacion">19/12/24</span>
+                        <input type="hidden" name="task_id" class="task_id">
+                    </article>
+                    <article class="tarea chanfle archivada template">
+                        <h3>
+                            <span class="titulo-ropa">Prenda</span>
+                        </h3>
+                        <hr>
+                        <p class="stock">
+                            Cantidad de stock
+                        </p>
+                        <div class="acciones">
+                            <button id="Pendiente" title="Camperas"><i class="fa-solid fa-vest"></i></button>
+                            <button id="Editar" title="Editar"><i class="fa-solid fa-pen"></i></button>
+                            <button id="Completar" title="Remeras"><i class='bx bxs-t-shirt'></i></button>
+                        </div>
+                        <span class="fecha" title="Fecha de actualizacion">19/12/24</span>
+                        <input type="hidden" name="task_id" class="task_id">
+                    </article>
+                </div>
+                <article class="tarea agregar">
+                    <a href="../components/add_update_task.html" class="accion">
+                        <i class='bx bxs-message-square-add'></i>
+                    </a>
+                </article>
+            </section>
+        </main>
+    <footer>
+        <p>Codo a Codo 2024 - Todos los derechos reservados</p>
+    </footer>
+    <script src="/js/index.js"></script>
+    <script src="/js/fetchData.js"></script>
+</body>
+</html>
